@@ -282,7 +282,7 @@ body {
 }
 
 .about-text h2 {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
 }
 .about-text h2 span {
   color: #7c3aed;
@@ -392,7 +392,7 @@ body {
 
 .heading-skills {
   text-align: center;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 600;
 }
 .heading-skills span {
