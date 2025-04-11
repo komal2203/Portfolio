@@ -121,7 +121,7 @@ body {
   max-width: 600px;
 }
 .home-content h3 {
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: 700;
   opacity: 0;
   animation: slideBottom 0.5s ease 0.2s 1 forwards;
@@ -269,13 +269,20 @@ body {
 }
 .about-text p {
   color: white;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   margin-bottom: 0.5rem;
   padding-right: 1rem;
 }
 
 .about-text li {
   color: white;
+  font-size: 0.7rem;
+  margin-bottom: 0.5rem;
+  padding-right: 1rem;
+}
+
+.about-text h2 {
+  font-size: 3rem;
   font-size: 0.8rem;
   margin-bottom: 0.5rem;
   padding-right: 1rem;
@@ -417,7 +424,7 @@ body {
   /* background: #1e293b; Slightly lighter than the section background */
 
   padding: 0.5rem;
-  font-size: 0.95rem;
+  font-size: 0.8rem;
   font-weight: 400;
   /* border-radius: ; */
   transition: background 0.5s transform 0.5;
@@ -512,12 +519,13 @@ body {
 }
 .layer {
   text-align: center;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
+
   padding: 1rem;
   padding-top: 0;
 }
 .layer h5 {
-  font-size: 1.7rem;
+  font-size: 1.1rem;
   margin-bottom: 0.3rem;
   opacity: 0;
   animation: slideBottom 0.5s ease forwards;
@@ -577,7 +585,8 @@ body {
   display: inline-flex;
   justify-content: flex-start;
   gap: 0.5rem;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
+
   line-height: 1.5rem;
   align-items: center;
   color: #c084fc;
@@ -725,7 +734,7 @@ form textarea {
 }
 
 .skill-box ul li {
-  font-size: 1rem;
+  font-size: 0.8rem;
   margin-bottom: 0.6rem;
   color: #e2e8f0; /* Light slate for readability */
   transition: color 0.3s ease;
