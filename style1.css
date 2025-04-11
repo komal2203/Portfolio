@@ -121,7 +121,7 @@ body {
   max-width: 600px;
 }
 .home-content h3 {
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: 700;
   opacity: 0;
   animation: slideBottom 0.5s ease 0.2s 1 forwards;
@@ -137,7 +137,7 @@ body {
   }
 }
 .home-content h1 {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 700;
   font-family: "Playwrite HU", cursive;
   margin: -3px 0;
@@ -146,7 +146,7 @@ body {
   animation-delay: 0.3s;
 }
 .home-content p {
-  font-size: 20px;
+  font-size: 0.7rem;
   opacity: 0;
   animation: slideLeft 0.7s ease forwards;
   animation-delay: 0.4s;
@@ -254,7 +254,6 @@ body {
   .about-text h2 {
     font-size: 3rem;
   }
-    
 }
 .about-img {
   padding: 2rem;
@@ -270,20 +269,20 @@ body {
 }
 .about-text p {
   color: white;
-  font-size: 1.2rem;
+  font-size: 0.7rem;
   margin-bottom: 1.5rem;
   padding-right: 2rem;
 }
 
 .about-text li {
   color: white;
-  font-size: 1.2rem;
+  font-size: 0.7rem;
   margin-bottom: 1.5rem;
   padding-right: 2rem;
 }
 
 .about-text h2 {
-  font-size: 5rem;
+  font-size: 4rem;
 }
 .about-text h2 span {
   color: #7c3aed;
@@ -418,7 +417,7 @@ body {
   /* background: #1e293b; Slightly lighter than the section background */
 
   padding: 0.5rem;
-  font-size: 0.95rem;
+  font-size: 0.8rem;
   font-weight: 400;
   /* border-radius: ; */
   transition: background 0.5s transform 0.5;
@@ -432,7 +431,7 @@ body {
   animation-delay: 2s;
 }
 .skill-icon {
-  font-size: 3.5rem;
+  font-size: 3rem;
 }
 .skill-name {
   font-size: 1.4rem;
@@ -448,7 +447,7 @@ body {
   margin-top: 2rem;
 }
 .main-text h2 {
-  font-size: 3rem;
+  font-size: 2rem;
   line-height: 1rem;
   text-align: center;
 }
@@ -459,7 +458,7 @@ body {
   display: grid;
   margin-top: 2rem;
   margin: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 3rem;
   padding: 3rem;
 }
@@ -513,18 +512,18 @@ body {
 }
 .layer {
   text-align: center;
-  font-size: 1rem;
+  font-size: 0.7rem;
   padding: 1rem;
   padding-top: 0;
 }
 .layer h5 {
-  font-size: 2rem;
+  font-size: 1.1rem;
   margin-bottom: 0.3rem;
   opacity: 0;
   animation: slideBottom 0.5s ease forwards;
 }
 .layer i {
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   /* color: #ededed; */
   opacity: 0;
   animation: slideTop 0.5s ease forwards;
@@ -547,7 +546,7 @@ body {
   margin-bottom: 4rem;
 }
 .contact-text h2 {
-  font-size: 3rem;
+  font-size: 2rem;
   text-align: center;
 }
 .contact-text h2 span {
@@ -557,12 +556,12 @@ body {
   margin: 1rem 0;
 
   color: #c084fc;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 600;
 }
 .contact-text p {
   color: white;
-  font-size: 1rem;
+  font-size: 0.8rem;
   line-height: 1.5rem;
   font-weight: 100;
   margin-bottom: 2rem;
@@ -578,7 +577,7 @@ body {
   display: inline-flex;
   justify-content: flex-start;
   gap: 0.5rem;
-  font-size: 1rem;
+  font-size: 0.8rem;
   line-height: 1.5rem;
   align-items: center;
   color: #c084fc;
@@ -614,7 +613,7 @@ form textarea {
   background: #1e293b; /* Slightly lighter than the section background */
 
   border-radius: 25px;
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #c084fc;
   /* border: 2px solid #c084fc; */
   font-weight: 500;
@@ -685,7 +684,7 @@ form textarea {
 }
 
 .skills-content .heading {
-  font-size: 3rem;
+  font-size: 2rem;
   margin-bottom: 3rem;
   color: #f8fafc;
 }
@@ -714,7 +713,7 @@ form textarea {
 }
 
 .skill-box h3 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin-bottom: 1rem;
   color: #c084fc; /* Soft purple */
 }
@@ -726,7 +725,7 @@ form textarea {
 }
 
 .skill-box ul li {
-  font-size: 1rem;
+  font-size: 0.8rem;
   margin-bottom: 0.6rem;
   color: #e2e8f0; /* Light slate for readability */
   transition: color 0.3s ease;
