@@ -146,7 +146,7 @@ body {
   animation-delay: 0.3s;
 }
 .home-content p {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   opacity: 0;
   animation: slideLeft 0.7s ease forwards;
   animation-delay: 0.4s;
@@ -201,7 +201,7 @@ body {
   padding: 12px 28px;
   border-radius: 40px;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 0.8rem;
   color: #c084fc;
   border: 2px solid #c084fc;
 
@@ -252,7 +252,7 @@ body {
     text-align: center;
   }
   .about-text h2 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 }
 .about-img {
@@ -264,31 +264,38 @@ body {
 }
 .about-img img {
   height: 100%;
-  width: 65%;
+  width: 90%;
   border-radius: 50rem;
 }
 .about-text p {
   color: white;
   font-size: 0.7rem;
-  margin-bottom: 1.5rem;
-  padding-right: 2rem;
+  margin-bottom: 0.5rem;
+  padding-right: 1rem;
 }
 
 .about-text li {
   color: white;
   font-size: 0.7rem;
-  margin-bottom: 1.5rem;
-  padding-right: 2rem;
+  margin-bottom: 0.5rem;
+  padding-right: 1rem;
 }
 
 .about-text h2 {
-  font-size: 4rem;
+  font-size: 3rem;
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+  padding-right: 1rem;
+}
+
+.about-text h2 {
+  font-size: 2.5rem;
 }
 .about-text h2 span {
   color: #7c3aed;
 }
 .about-text h4 {
-  font-size: 2rem;
+  font-size: 1.3rem;
   font-weight: 600;
   color: #c084fc;
   line-height: 2rem;
@@ -392,7 +399,7 @@ body {
 
 .heading-skills {
   text-align: center;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 600;
 }
 .heading-skills span {
@@ -434,7 +441,7 @@ body {
   font-size: 3rem;
 }
 .skill-name {
-  font-size: 1.4rem;
+  font-size: 1rem;
   font-weight: 400;
   margin-bottom: 0.5rem;
 }
@@ -513,6 +520,7 @@ body {
 .layer {
   text-align: center;
   font-size: 0.7rem;
+
   padding: 1rem;
   padding-top: 0;
 }
@@ -578,6 +586,7 @@ body {
   justify-content: flex-start;
   gap: 0.5rem;
   font-size: 0.8rem;
+
   line-height: 1.5rem;
   align-items: center;
   color: #c084fc;
@@ -658,7 +667,7 @@ form textarea {
   /* background: #1e293b; Slightly lighter than the section background */
 
   border-radius: 25px;
-  font-size: 1.2rem;
+  font-size: 1rem;
   text-decoration: none;
 
   color: #c084fc;
