@@ -548,7 +548,7 @@ body {
   padding: 2rem;
   margin: 2rem;
 
-  background-color: #0f172a; /* Deep slate background for contrast */
+  /* background-color: #0f172a; Deep slate background for contrast */
 }
 .contact-text {
   margin-bottom: 4rem;
@@ -644,7 +644,7 @@ form textarea {
 .last-section {
   display: flex;
 
-  background-color: #0f172a; /* Deep slate background for contrast */
+  /* background-color: #0f172a; Deep slate background for contrast */
 }
 .last-text {
   display: flex;
@@ -909,6 +909,7 @@ form textarea {
   .layer i:hover {
     transform: scale(1.2);
   }
+
   .row img {
     width: 100%; /* Ensure images take full width */
     height: auto;
