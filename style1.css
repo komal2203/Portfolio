@@ -231,6 +231,7 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 1.5rem;
+  margin-top: 5rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -255,6 +256,7 @@ body {
     font-size: 2rem;
   }
 }
+
 .about-img {
   padding: 2rem;
   display: flex;
@@ -395,6 +397,9 @@ body {
   transform: scale(1.1);
   background-color: rgb(178, 35, 186);
   color: #ededed;
+}
+.skills{
+  background-color: #1a0f2a;
 }
 
 .heading-skills {
@@ -836,6 +841,7 @@ form textarea {
   .about {
     flex-direction: column;
     padding: 20px 5%;
+    margin-top: 0;
     text-align: center;
   }
 
