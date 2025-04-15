@@ -760,3 +760,389 @@ form textarea {
   color: #7c3aed; /* Violet accent for 'Skills' word */
   border: 2px solid #7c3aed;
 }
+
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+  /* General */
+  body {
+    overflow-x: hidden;
+  }
+
+  /* Header */
+  .header {
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 5%;
+    display: none;
+    margin-bottom: 2rem;
+  }
+
+  .navbar {
+    display: none; /* Hide navbar */
+  }
+
+  .navbar a {
+    margin-left: 0;
+    font-size: 20px;
+  }
+
+  /* Home Section */
+  .home {
+    flex-direction: column;
+    padding: 30px 5%;
+    text-align: center;
+  }
+
+  .home-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .home-content h3 {
+    font-size: 1rem;
+  }
+
+  .home-content p {
+    font-size: 0.9rem;
+  }
+
+  .home-sci {
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .img-container {
+    justify-content: center;
+    margin-top: 20px;
+    flex-wrap: wrap; /* Ensure images wrap properly */
+  }
+
+  .me-img {
+    width: 50%;
+    height: auto;
+    margin: 0 auto; /* Center the image */
+  }
+
+  /* About Section */
+  .about {
+    flex-direction: column;
+    padding: 20px 5%;
+    text-align: center;
+  }
+
+  .about-img img {
+    width: 100%;
+    height: auto;
+    display: none;
+    border-radius: 50%;
+    margin-bottom: 20px; /* Add spacing below the image */
+  }
+
+  .about-text h2 {
+    font-size: 1.5rem;
+  }
+
+  .about-text h4 {
+    font-size: 1rem;
+  }
+
+  .about-text p,
+  .about-text li {
+    font-size: 0.9rem;
+  }
+
+  /* Skills Section */
+  .skills {
+    background-color: #1a0f2a;
+    padding: 2rem 1rem;
+  }
+
+  .skills-content .heading {
+    font-size: 2rem;
+  }
+
+  .skills-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.4rem;
+  }
+
+  .skill-box {
+    padding: 1rem;
+    text-align: left; /* Center-align skill content */
+  }
+
+  .skill-box h3 {
+    font-size: 0.8rem;
+  }
+
+  .skill-box ul li {
+    font-size: 0.8rem;
+    text-align: left;
+  }
+
+  /* Projects Section */
+  .project-content {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .layer {
+    text-align: center;
+    font-size: 0.7rem;
+
+    padding: 0.5rem;
+    padding-top: 0;
+  }
+  .layer h5 {
+    font-size: 1rem;
+    margin-bottom: 0.3rem;
+    opacity: 0;
+    animation: slideBottom 0.5s ease forwards;
+  }
+  .layer i {
+    font-size: 0.7rem;
+    /* color: #ededed; */
+    opacity: 0;
+    animation: slideTop 0.5s ease forwards;
+  }
+
+  .layer i:hover {
+    transform: scale(1.2);
+  }
+  .row img {
+    width: 100%; /* Ensure images take full width */
+    height: auto;
+    object-fit: cover; /* Prevent image distortion */
+  }
+
+  .layer h5 {
+    font-size: 1rem;
+  }
+
+  .layer p {
+    font-size: 0.8rem;
+  }
+
+  /* Contact Section */
+  .contact {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .contact-text {
+    margin-bottom: 2rem;
+  }
+
+  .contact-text h2 {
+    font-size: 1.5rem;
+  }
+
+  .contact-text h4 {
+    font-size: 1rem;
+  }
+
+  .contact-text p {
+    font-size: 0.9rem;
+  }
+
+  .contact-form form input,
+  .contact-form form textarea {
+    width: 100%;
+    margin-bottom: 1rem; /* Add spacing between inputs */
+  }
+
+  /* Footer */
+  .last-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .last-text p {
+    font-size: 0.9rem;
+  }
+
+  .back-to-top {
+    font-size: 0.9rem;
+  }
+}
+
+/* Mobile responsiveness for screens below 550px */
+@media screen and (max-width: 550px) {
+  /* General styles for centering and max width */
+  * {
+    text-align: center;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  /* Header */
+  .header {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 5%;
+  }
+
+  .navbar {
+    display: none; /* Hide navbar */
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  /* Home Section */
+  .home {
+    flex-direction: column;
+    padding: 30px 5%;
+    text-align: center;
+  }
+
+  .home-content h1 {
+    font-size: 1.2rem;
+  }
+
+  .home-content h3 {
+    font-size: 0.9rem;
+  }
+
+  .home-content p {
+    font-size: 0.8rem;
+  }
+
+  .home-sci {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .img-container {
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .me-img {
+    width: 80%;
+    height: auto;
+  }
+
+  /* About Section */
+  .about {
+    flex-direction: column;
+    padding: 20px 5%;
+    text-align: center;
+  }
+
+  .about-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+  }
+
+  .about-text h2 {
+    font-size: 1.5rem;
+  }
+
+  .about-text h4 {
+    font-size: 1rem;
+  }
+
+  .about-text p,
+  .about-text li {
+    font-size: 0.8rem;
+  }
+
+  /* Skills Section */
+  .skills {
+    padding: 1.5rem 1rem;
+  }
+
+  .skills-content .heading {
+    font-size: 1.2rem;
+  }
+
+  .skills-container {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1rem;
+  }
+
+  .skill-box {
+    padding: 0.8rem;
+    text-align: center;
+  }
+
+  .skill-box h3 {
+    font-size: 1rem;
+  }
+
+  .skill-box ul li {
+    font-size: 0.7rem;
+    text-align: left;
+  }
+
+  /* Projects Section */
+  .project-content {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+  }
+
+  .row img {
+    height: auto;
+  }
+
+  .layer h5 {
+    font-size: 0.9rem;
+  }
+
+  .layer p {
+    font-size: 0.7rem;
+  }
+
+  /* Contact Section */
+  .contact {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .contact-text {
+    margin-bottom: 1.5rem;
+  }
+
+  .contact-text h2 {
+    font-size: 1.2rem;
+  }
+
+  .contact-text h4 {
+    font-size: 0.9rem;
+  }
+
+  .contact-text p {
+    font-size: 0.8rem;
+  }
+
+  .contact-form form input,
+  .contact-form form textarea {
+    width: 100%;
+    font-size: 0.8rem;
+  }
+
+  .contact-form form .send {
+    font-size: 0.9rem;
+  }
+
+  /* Footer */
+  .last-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .last-text p {
+    font-size: 0.8rem;
+  }
+
+  .back-to-top {
+    font-size: 0.8rem;
+  }
+}
