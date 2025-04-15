@@ -860,6 +860,12 @@ form textarea {
     font-size: 0.8rem;
   }
 
+  .heading-skills {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
    .container-skills {
     grid-template-columns: repeat(2, minmax(100px, 1fr)); /* 2 columns on small screens */
   }
@@ -871,7 +877,7 @@ form textarea {
   }
 
   .skills-content .heading {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
 
   .skills-container {
@@ -894,6 +900,12 @@ form textarea {
     text-align: left;
   }
 
+  .profiles{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.6rem;
+  }
   /* Projects Section */
   .project-content {
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
