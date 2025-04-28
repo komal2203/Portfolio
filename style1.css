@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Playwrite+AR&family=Playwrite+BE+WAL:wght@350&family=Playwrite+HU:wght@100..400&display=swap");
 
 * {
+  scroll-behavior: smooth;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
