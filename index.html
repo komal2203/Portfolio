@@ -10,6 +10,7 @@
       rel="stylesheet"
     />
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
   </head>
   <body>
     <header class="header">
@@ -57,17 +58,17 @@
         </div>
       </div>
 
-      <div class="img-container">
+      <div class="img-container" data-aos="zoom-in">
         <img src="me3.png" alt="" class="me-img" />
       </div>
     </section>
 
     <section class="about" id="about"  >
-      <div class="about-img">
+      <div class="about-img" data-aos="fade-right">
         <img src="image3.png" alt="" />
       </div>
 
-      <div class="about-text">
+      <div class="about-text" data-aos="fade-left">
         <h2 id="about">About <span>Me</span></h2>
         <h4>Full Stack Developer</h4>
         <!-- <p>
@@ -164,7 +165,7 @@
           <div class="skill-name">DSA</div>
         </div> -->
 
-        <div class="content-skills">
+        <div class="content-skills" data-aos="zoom-in">
           <div class="skill-icon">
             <i class="bx bxl-html5" style="color: #fc1212"></i>
           </div>
@@ -176,7 +177,7 @@
           </div> -->
         </div>
 
-        <div class="content-skills">
+        <div class="content-skills" data-aos="zoom-in">
           <div class="skill-icon">
             <i class="bx bxl-css3" style="color: #f9ec31"></i>
           </div>
@@ -189,7 +190,7 @@
           </div> -->
         </div>
 
-        <div class="content-skills">
+        <div class="content-skills" data-aos="zoom-in">
           <div class="skill-icon">
             <i class="bx bxl-bootstrap" style="color: rgb(168, 137, 254)"></i>
           </div>
@@ -201,7 +202,7 @@
           </div> -->
         </div>
 
-        <div class="content-skills">
+        <div class="content-skills" data-aos="zoom-in">
           <div class="skill-icon">
             <i class="bx bxl-java" style="color: #4cf932"></i>
           </div>
@@ -213,7 +214,7 @@
           </div> -->
         </div>
 
-        <div class="content-skills">
+        <div class="content-skills" data-aos="zoom-in">
           <div class="skill-icon">
             <i class="bx bxl-react" style="color: #32dbf9"></i>
           </div>
@@ -227,14 +228,14 @@
 
      
 
-            <div class="content-skills">
+            <div class="content-skills" data-aos="zoom-in">
               <div class="skill-icon">
                 <i class="bx bxl-nodejs" style="color: #68A063"></i>
               </div>
               <div class="skill-name">NODE.JS</div>
               </div>
 
-            <div class="content-skills">
+            <div class="content-skills" data-aos="zoom-in">
               <div class="skill-icon">
                 <i class="bx bx-code-block" style="color: #fd6f40"></i>
               </div>
@@ -242,14 +243,14 @@
               </div>
 
 
-               <div class="content-skills">
+               <div class="content-skills" data-aos="zoom-in">
               <div class="skill-icon">
                 <i class="bx bxl-mongodb" style="color: #4DB33D"></i>
               </div>
               <div class="skill-name">MONGODB</div>
               </div>
 
-            <div class="content-skills">
+            <div class="content-skills" data-aos="zoom-in">
               <div class="skill-icon">
                 <i class="bx bx-data" style="color: #1d17c9"></i>
               </div>
@@ -266,7 +267,7 @@
   <div class="skills-content">
     <h1 class="heading">My <span>Skills</span></h1>
 
-    <div class="skills-container">
+    <div class="skills-container" data-aos="fade-up">
       <!-- Technical Skills -->
       <div class="skill-box">
         <h3>Frontend</h3>
@@ -350,7 +351,7 @@
       <div class="project">
         <div class="main-text">
           <h2 id="projects">Latest <span>Projects</span></h2>
-          <div class="project-content">
+          <div class="project-content" data-aos="fade-up">
 
               <div class="row">
                 <img src="beyondsight.png" style="height: 50%;" alt="" />
@@ -665,7 +666,7 @@
     </section>
 
     <section class="contact">
-      <div class="contact-text">
+      <div class="contact-text" data-aos="fade-right">
         <h2>Contact <span>Me</span></h2>
         <h4>Let's work Together</h4>
         <p>
@@ -710,7 +711,7 @@
         </div>
       </div>
 
-      <div id="contact" class="contact-form">
+      <div id="contact" class="contact-form" data-aos="fade-left">
         <form action="">
           <input type="text" placeholder="Enter Your Name" required />
           <input type="email" placeholder="Enter Your Email" required />
@@ -736,5 +737,14 @@
     </section>
 
     <script src="main.js"></script>
+     <script src="main.js"></script>
+    <!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,  // Animation duration in ms
+    once: true       // Animate only once when scroll into view
+  });
+</script>
   </body>
 </html>
