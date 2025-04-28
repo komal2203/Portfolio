@@ -745,5 +745,30 @@
     once: true       // Animate only once when scroll into view
   });
 </script>
+
+       <script>
+      function disableLeftRightAnimationsOnMobile() {
+        if (window.innerWidth <= 768) {
+          // 📱 mobile screen
+          document
+            .querySelectorAll('[data-aos="fade-left"], [data-aos="fade-right"]')
+            .forEach(function (el) {
+              el.removeAttribute('data-aos');  // ❌ disable only fade-left and fade-right
+            });
+        }
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        disableLeftRightAnimationsOnMobile(); // first remove left/right on mobile
+        AOS.init({
+          once: true,
+        });
+      });
+
+      window.addEventListener("resize", function () {
+        disableLeftRightAnimationsOnMobile();
+        AOS.refreshHard(); // Refresh AOS after changes
+      });
+    </script>
   </body>
 </html>
