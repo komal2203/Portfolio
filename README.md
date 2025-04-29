@@ -55,9 +55,9 @@ Whether it’s designing an intuitive UI or optimizing backend performance, I lo
 
 ## 🏆 Achievements & Highlights
 
-- ✅ **Solved 700+ DSA problems** across LeetCode, CodeForces, and GFG  
-- 🔸 **LeetCode Rating**: 1520+
-- 👩🏻‍💻 **Worked as a team of six and emerged as one of the Top 4 Finalists in the Code-to-Give Hackathon by Morgan Stanley. **
+- ✅ **Solved 700+ DSA problems** across LeetCode,Coding Ninjas and GFG  
+- 🔸 **LeetCode Rating**: 1575
+- 👩🏻‍💻 **Worked as a team of six and emerged as one of the Top 4 Finalists in the Code-to-Give Hackathon by Morgan Stanley.**
 - 🎤 Member of **Cognitive Minds (Debating Society)** at DTU  
 - 🏅 **Adjudicated at IIT Bombay Debate** for British Parliamentary Debate  
 
