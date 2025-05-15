@@ -1024,9 +1024,12 @@ form textarea {
   }
 
   .img-container {
+    display: flex;
     justify-content: center;
+    align-items:center;
+    height: 100%;
     /* margin-top: 20px; */
-    margin-top: -40px;
+    margin-top: -60px;
     flex-wrap: wrap;
   }
 
@@ -1041,7 +1044,7 @@ form textarea {
   .about {
     flex-direction: column;
     padding: 20px 5%;
-    margin-top: -40px;
+    margin-top: -70px;
     text-align: center;
   }
 
