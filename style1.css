@@ -260,7 +260,7 @@ body {
   display: flex;
   align-items: center;
   align-self: center;
-  max-width: 40%;
+  max-width: 30%;
   font-size: 13px;
   gap: 0.3rem;
   justify-content: center;
