@@ -205,6 +205,7 @@ body {
 .home-content h3 span {
   color: #7c3aed;
 }
+
 .home-sci a {
   display: inline-flex;
   justify-content: center;
@@ -222,6 +223,22 @@ body {
   opacity: 0;
   animation: slideLeft 0.5s ease 1 forwards;
   animation-delay: calc(0.15s * var(--i));
+
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: transform 0.3s ease;
+}
+
+.home-sci a::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, #7506a5, #9333ea, #7c3aed);
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.8s ease;
 }
 .home-sci a:hover {
   /* background-color: rgb(236, 201, 252); */
@@ -231,31 +248,53 @@ body {
   /* box-shadow: 0 0 20px rgb(149, 51, 255); */
 }
 
+.home-sci a:hover::before {
+  transform: scaleX(1); /* Animate gradient in from left to right */
+}
+.home-sci a:hover {
+  color: white;
+}
+
+
 .btn-box {
-  display: inline-flex;
-  padding: 12px 28px;
-  border-radius: 40px;
-  text-decoration: none;
-  font-size: 0.8rem;
-  /* color: #c084fc;
-  border: 2px solid #c084fc; */
+  display: flex;
+  align-items: center;
+  align-self: center;
+  width: 30%;
+  gap: 0.3rem;
+  justify-content: center;
+  padding: 10px 20px;
+  background: #211a39; /* Solid initial background */
+  /* border: 1px solid #7a04c2;
+  color: white; */
+
   color: #9e41fc;
   border: 2px solid #a246fd;
+  margin-bottom: 1rem;
+  border-radius: 40px;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: transform 0.3s ease;
+}
 
-  font-weight: 600;
-  opacity: 0;
-  animation: slideTop 1s ease 1 forwards;
-  /* animation-delay: 1.5s; */
-  animation-delay: calc(0.15s * var(--i));
+.btn-box::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, #7506a5, #9333ea, #7c3aed);
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.8s ease;
+}
+
+.btn-box:hover::before {
+  transform: scaleX(1); /* Animate gradient in from left to right */
 }
 .btn-box:hover {
-  /* box-shadow: 0 0 5px rgb(236, 201, 252), 0 0 25px rgb(236, 201, 252),
-    0 0 50px rgb(236, 201, 252), 0 0 80px rgb(236, 201, 252);
-    transform: scale(1.1); */
-  color: #7c3aed; /* Violet accent for 'Skills' word */
-  /* background: #1e293b; */
-  border: 2px solid #7c3aed;
-  /* box-shadow: 0 0 20px rgb(149, 51, 255); */
+  color: white;
 }
 
 .scroll-down {
@@ -612,7 +651,7 @@ body {
   display: grid;
   margin-top: 2rem;
   margin: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   grid-gap: 3rem;
   padding: 3rem;
 }
@@ -623,11 +662,36 @@ body {
   align-self: center;
   gap: 0.3rem;
   justify-content: center;
+  padding: 5px 10px;
+  background: #211a39; /* Solid initial background */
+  border: 1px solid #7a04c2;
+  color: white;
+  border-radius: 10px;
   text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: transform 0.3s ease;
 }
-.aClass:hover {
-  transform: scale(1.1);
+
+.aClass::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, #7506a5, #9333ea, #7c3aed);
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.8s ease;
 }
+
+.aClass:hover::before {
+  transform: scaleX(1); /* Animate gradient in from left to right */
+}
+
+
+
+
 
 #tag {
   color: rgb(255, 255, 255);
@@ -646,7 +710,7 @@ body {
   border-radius: 2rem;
 
   background: #211a39; /* Slightly lighter than the section background */
-
+overflow: hidden;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -655,6 +719,7 @@ body {
   transform: scale(1.05);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
   cursor: pointer;
+  overflow: hidden;
 }
 
 .row img {
@@ -664,6 +729,27 @@ body {
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
   object-fit: cover;
+  transition: transform 0.5s ease-in-out; 
+}
+
+.row:hover img {
+  transform: scale(1.1);
+  overflow: hidden;
+}
+
+.project-box{
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-betwen;
+  align-items: center;
+  gap: 0.5rem;
+}
+.project-links{
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+  width: 100%;
 }
 .row p {
   margin-bottom: 0.2rem;
@@ -676,8 +762,9 @@ body {
   padding-top: 0;
 }
 .layer h5 {
-  font-size: 1.1rem;
-  margin-bottom: 0.3rem;
+  font-size: 1.2rem;
+  margin-bottom: 0.4rem;
+  font-family:'Times New Roman', Times, serif;
   opacity: 0;
   animation: slideBottom 0.5s ease forwards;
 }
@@ -833,24 +920,40 @@ form textarea {
 .last-text p {
   font-family: "Playwrite HU", cursive;
 }
+
+
 .back-to-top {
-  display: inline-block;
-  padding: 0.7rem 1.5rem;
-  /* background-color: rgb(217, 160, 244); */
-  /* background: #1e293b; Slightly lighter than the section background */
-
-  border-radius: 25px;
-  font-size: 1rem;
-  text-decoration: none;
-
-  color: #c084fc;
-  border: 2px solid #c084fc;
-  font-weight: 500;
-  opacity: 0;
+  display: flex;
+  align-items: center;
+  align-self: center;
+  gap: 0.3rem;
+  justify-content: center;
+  padding: 10px 20px;
+  background: #211a39; /* Solid initial background */
+  border: 1px solid #7a04c2;
+  color: white;
   margin-bottom: 1rem;
-  animation: slideTop 1s ease forwards;
-  /* box-shadow: 0 0 10px rgb(194, 2, 194), 0 0 5px rgb(254, 111, 254); */
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  border-radius: 40px;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: transform 0.3s ease;
+}
+
+.back-to-top::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, #7506a5, #9333ea, #7c3aed);
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.8s ease;
+}
+
+.back-to-top:hover::before {
+  transform: scaleX(1); /* Animate gradient in from left to right */
 }
 
 .skills {
@@ -927,15 +1030,7 @@ form textarea {
   text-decoration: underline;
 }
 
-.back-to-top:hover {
-  /* box-shadow: 0 0 10px rgb(189, 20, 189), 0 0 20px rgb(236, 201, 252),
-    0 0 15px white;
-  transform: scale(1.1);
-  background-color: rgb(178, 35, 186);
-  color: #ededed; */
-  color: #7c3aed; /* Violet accent for 'Skills' word */
-  border: 2px solid #7c3aed;
-}
+
 
 /* Mobile responsiveness for screens up to 768px */
 @media screen and (max-width: 650px) {
@@ -1016,6 +1111,7 @@ form textarea {
 
   .btn-box {
     font-size: 0.8rem;
+    width: 40%;
     padding: 10px 20px;
   }
 
@@ -1163,18 +1259,17 @@ form textarea {
     height: auto;
     object-fit: cover;
   }
-
-  .aClass {
-    width: 50%;
+  .project-links{
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    align-self: center;
-    /* gap: 0.3rem; */
-    justify-content: space-evenly;
-    text-decoration: none;
+    gap: 0.5rem;
   }
+  
   .aClass:hover {
     transform: scale(1.1);
+    background: transparent;
   }
 
   #tag {
