@@ -260,10 +260,11 @@ body {
   display: flex;
   align-items: center;
   align-self: center;
-  width: 30%;
+  max-width: 30%;
+  font-size: 13px;
   gap: 0.3rem;
   justify-content: center;
-  padding: 10px 20px;
+  padding: 8px 10px;
   background: #211a39; /* Solid initial background */
   /* border: 1px solid #7a04c2;
   color: white; */
