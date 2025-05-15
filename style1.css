@@ -663,8 +663,13 @@ body {
   margin: 2rem;
 
   /* background-color: #0f172a; Deep slate background for contrast */
+
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
 }
 .contact-text {
+  /* text-align: center; */
   margin-bottom: 4rem;
 }
 .contact-text h2 {
@@ -714,8 +719,20 @@ body {
   color: #7c3aed;
   transform: scale(1.1);
 }
+.vid-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 16px;
+  overflow: hidden;
+}
 .contact-form {
   position: relative;
+  display: none;
 }
 .contact-form form input,
 form textarea {
@@ -724,7 +741,10 @@ form textarea {
   color: #f8fafc;
   width: 90%;
   padding: 0.7rem;
-  background: #1e293b; /* Slightly lighter than the section background */
+  /* background: #1e293b; Slightly lighter than the section background */
+
+  background: #211a39;
+
 
   font-weight: 400;
   margin-bottom: 0.5rem;
@@ -733,7 +753,11 @@ form textarea {
 .contact-form form .send {
   display: inline-block;
   padding: 0.7rem 1.5rem;
-  background: #1e293b; /* Slightly lighter than the section background */
+  /* background: #1e293b; Slightly lighter than the section background */
+  
+
+  background-color: #211a39;
+
 
   border-radius: 25px;
   font-size: 1rem;
@@ -753,7 +777,7 @@ form textarea {
 
   color: #7c3aed; /* Violet accent for 'Skills' word */
   border: 2px solid #7c3aed;
-  background-color: #0f172a;
+  background: #211a39;
 }
 .last-section {
   display: flex;
