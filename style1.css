@@ -11,6 +11,7 @@
 }
 body {
   color: #ededed;
+  overflow-x: hidden;
   /* background-color: purple; */
   /* background-image: radial-gradient(
     circle farthest-corner at 3.2% 49.6%,
@@ -18,6 +19,29 @@ body {
     rgba(161, 10, 144, 0.72) 83.6%
   ); */
   background-color: #1a0f2a; /* Deep slate background for contrast */
+}
+.gradient {
+  background: linear-gradient(
+    to right,
+    #5020b1,
+    #9b42d6,
+    #6600c5,
+    #6541f5,
+    #bc26f8,
+    #a614d2,
+    #7300ad
+  );
+  background-size: 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animate-gradient 3s linear infinite;
+}
+
+@keyframes animate-gradient {
+  to {
+    background-position: 200%;
+  }
 }
 .header {
   position: fixed;
@@ -28,8 +52,8 @@ body {
 
   background: linear-gradient(
     135deg,
-    rgba(124, 58, 237, 0.9),
-    rgba(48, 2, 61, 0.9)
+    rgba(139, 12, 242, 0.9),
+    rgba(52, 4, 65, 0.9)
   );
 
   display: flex;
@@ -71,6 +95,7 @@ body {
   opacity: 0;
   animation: slideTop 0.5s ease forwards;
   animation-delay: calc(0.1s * var(--i));
+  transition: all 1.2s ease;
 }
 
 @keyframes slideTop {
@@ -85,8 +110,13 @@ body {
 }
 
 .navbar a:hover {
-  color: #7c3aed; /* Violet accent for 'Skills' word */
+  background: linear-gradient(90deg, #a21caf, #9333ea, #7c3aed);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; /* optional for non-WebKit support */
+  text-fill-color: transparent; /* optional fallback */
 }
+
 .home {
   position: relative;
   width: 100%;
@@ -115,7 +145,7 @@ body {
 }
 .me-img:hover {
   transform: scale(1.1);
-  transition-duration: 0.2s;
+  transition-duration: 0.3s;
   transition-timing-function: ease-in;
 }
 .home-content {
@@ -179,8 +209,8 @@ body {
   width: 40px;
   background: transparent;
   text-decoration: none;
-  color: #c084fc;
-  border: 2px solid #c084fc;
+  color: #9e41fc;
+  border: 2px solid #a246fd;
   border-radius: 100px;
   font-size: 1.5rem;
   margin: 30px 15px 30px 0;
@@ -203,8 +233,10 @@ body {
   border-radius: 40px;
   text-decoration: none;
   font-size: 0.8rem;
-  color: #c084fc;
-  border: 2px solid #c084fc;
+  /* color: #c084fc;
+  border: 2px solid #c084fc; */
+  color: #9e41fc;
+  border: 2px solid #a246fd;
 
   font-weight: 600;
   opacity: 0;
@@ -220,6 +252,52 @@ body {
   /* background: #1e293b; */
   border: 2px solid #7c3aed;
   /* box-shadow: 0 0 20px rgb(149, 51, 255); */
+}
+
+.scroll-down {
+  height: 50px;
+  width: 30px;
+  border: 2px solid #7c3aed;
+  position: absolute;
+  left: 49%;
+  bottom: 8%;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 0 15px rgb(97, 2, 145);
+}
+
+.scroll-down::before,
+.scroll-down::after {
+  content: "";
+  position: absolute;
+  top: 20%;
+  left: 49%;
+  width: 10px;
+  height: 10px;
+  border: 2px solid #7c3aed;
+  transform: translate(-50%, -100%) rotate(45deg);
+  border-top: transparent;
+  border-left: transparent;
+  animation: scroll-down 2s ease-in-out infinite;
+}
+
+.scroll-down::before {
+  top: 30%;
+  animation-delay: 0.5s;
+}
+
+@keyframes scroll-down {
+  0% {
+    opacity: 0;
+  }
+  30%,
+  60% {
+    opacity: 1;
+  }
+  100% {
+    top: 90%;
+    opacity: 0;
+  }
 }
 
 .about {
@@ -270,6 +348,34 @@ body {
   width: 90%;
   border-radius: 50rem;
 }
+
+.vid-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 16px;
+  overflow: hidden;
+  /* background-color: #0f172a; optional subtle background */
+}
+
+.vid-container video {
+  width: 90%;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
+  mix-blend-mode: lighten;
+  border-radius: 12px;
+  transition: transform 0.4s ease;
+}
+
+.vid-container video:hover {
+  transform: scale(1.03);
+}
+
 .about-text p {
   color: white;
   font-size: 0.7rem;
@@ -399,7 +505,7 @@ body {
   background-color: rgb(178, 35, 186);
   color: #ededed;
 }
-.skills{
+.skills {
   background-color: #1a0f2a;
 }
 
@@ -416,7 +522,7 @@ body {
 .container-skills {
   display: grid;
   grid-template-columns: repeat(6, minmax(100px, 1fr));
-  grid-gap: 1rem;
+  grid-gap: 1.5rem;
   margin-top: 2rem;
   padding: 1rem;
 }
@@ -426,23 +532,20 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  /* background: #1e293b; Slightly lighter than the section background */
-
+  background: #211a39;
+ 
   padding: 0.5rem;
   font-size: 0.8rem;
   font-weight: 400;
-  /* border-radius: ; */
-  transition: background 0.5s transform 0.5;
-
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, background 0.3s ease;
+  border-radius: 0.75rem; /* optional, feel free to uncomment */
 }
 .content-skills:hover {
   transform: scale(1.1);
-  transition-duration: 0.1s;
-  transition-timing-function: ease-in;
-  animation-delay: 2s;
+  box-shadow: 0 10px 30px rgba(124, 58, 237, 0.25);
 }
+
 .skill-icon {
   font-size: 3rem;
 }
@@ -504,12 +607,16 @@ body {
   /* border: 1px solid white; */
   border-radius: 2rem;
 
-  background: #1e293b; /* Slightly lighter than the section background */
+  background: #211a39; /* Slightly lighter than the section background */
 
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .row:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
 }
 
 .row img {
@@ -546,6 +653,7 @@ body {
 .layer i:hover {
   transform: scale(1.2);
 }
+
 .contact {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -688,7 +796,8 @@ form textarea {
 
 .skills {
   padding: 5rem 2rem;
-  background-color: #0f172a; /* Deep slate background for contrast */
+  /* background-color: #0f172a; */
+  background-color: #1a0f2a; /* Deep slate background for contrast */
   color: #f1f5f9; /* Light text */
 }
 
@@ -715,7 +824,8 @@ form textarea {
 }
 
 .skill-box {
-  background: #1e293b; /* Slightly lighter than the section background */
+  /* background: #1e293b; Slightly lighter than the section background */
+  background: #211a39;
   padding: 2rem;
   border-radius: 1.5rem;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
@@ -723,8 +833,9 @@ form textarea {
 }
 
 .skill-box:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 24px rgba(124, 58, 237, 0.3);
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 12px 32px rgba(124, 58, 237, 0.4),
+    0 0 8px rgba(124, 58, 237, 0.2);
 }
 
 .skill-box h3 {
@@ -833,9 +944,13 @@ form textarea {
     font-size: 0.8rem;
   }
 
-  .btn-box{
+  .btn-box {
     font-size: 0.8rem;
     padding: 10px 20px;
+  }
+
+  .scroll-down {
+    display: none;
   }
 
   .img-container {
@@ -880,15 +995,22 @@ form textarea {
   }
 
   .heading-skills {
-  text-align: center;
-  font-size: 1.5rem;
-  font-weight: 600;
-}
-
-   .container-skills {
-    grid-template-columns: repeat(2, minmax(100px, 1fr)); /* 2 columns on small screens */
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
   }
 
+  .container-skills {
+    grid-template-columns: repeat(
+      2,
+      minmax(100px, 1fr)
+    ); /* 2 columns on small screens */
+  }
+
+  .content-skills{
+    height: 100%;
+    width: 100%;
+  }
   /* Skills Section */
   .skills {
     background-color: #1a0f2a;
@@ -901,13 +1023,18 @@ form textarea {
 
   .skills-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    grid-template-columns: repeat(
+      2,
+      minmax(100px, 1fr)
+    );
     gap: 1rem;
   }
 
   .skill-box {
     padding: 0.8rem;
     text-align: center;
+    height: 100%;
+    width: 100%;
   }
 
   .skill-box h3 {
@@ -919,7 +1046,7 @@ form textarea {
     text-align: left;
   }
 
-  .profiles{
+  .profiles {
     display: flex;
     justify-content: center;
     align-items: center;
