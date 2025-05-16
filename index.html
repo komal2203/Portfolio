@@ -29,6 +29,20 @@
       <div class="home-content">
         <h3>Hello,It's Me 👋</h3>
         <h1><span class="gradient">Komal Meena</span></h1>
+        <div class="hamburger" id="hamburger">
+          <!-- Hamburger icon: 3 lines -->
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+          <!-- The small popup box with links -->
+        <div class="popup-menu" id="popupMenu">
+          <a href="#" class="active">Home</a>
+          <a href="#about">About me</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact Me</a>
+        </div>
         <h3>And I'm a <span class="text"></span></h3>
         <p style="line-height: 1.3rem;">
           I’m a <span class="highlight">Full Stack Developer</span> and a <span class="highlight">Software Engineering</span> student at Delhi Technological University (DTU) 💻, with a strong passion for creating elegant, responsive, and user-centric web applications 🌐.
@@ -881,13 +895,41 @@
 
      <script src="main.js"></script>
     <!-- AOS JS -->
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+      <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+      <script>
+        AOS.init({
+          duration: 1000,  // Animation duration in ms
+          once: true       // Animate only once when scroll into view
+        });
+      </script>
+
+
 <script>
-  AOS.init({
-    duration: 1000,  // Animation duration in ms
-    once: true       // Animate only once when scroll into view
+  const hamburger = document.getElementById('hamburger');
+  const popupMenu = document.getElementById('popupMenu');
+
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    popupMenu.classList.toggle('show');
   });
+
+  // Optional: Close popup when a link is clicked
+  popupMenu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      popupMenu.classList.remove('show');
+      hamburger.classList.remove('active');
+    });
+  });
+
+  // Hide popup when clicking outside
+document.addEventListener('click', (e) => {
+  if (!popupMenu.contains(e.target) && !hamburger.contains(e.target)) {
+    popupMenu.classList.remove('show');
+    hamburger.classList.remove('active');
+  }
+});
 </script>
+
 
        <script>
       function disableLeftRightAnimationsOnMobile() {

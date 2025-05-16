@@ -48,6 +48,80 @@ body {
     background-position: 200%;
   }
 }
+
+.hamburger{
+  cursor: pointer;
+  z-index: 1000;
+  right: 1rem;
+  top: 2rem;
+  height: 40px;
+  width: 40px;
+  position: fixed;
+}
+
+.hamburger span {
+  height: 2px;
+  width: 25px;
+  background:#6600c5;
+  border-radius: 2px;
+  margin: 0.5rem;
+  display: block;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  transform-origin: center;
+}
+
+
+/* Hide nav on mobile by default */
+@media (max-width: 768px) {
+  .navbar a {
+    display: none;
+    position: fixed;       /* So it overlays the screen */
+    top: 4rem;             /* Just below the hamburger */
+    right: 2rem;           /* Align right */
+    background: #333;
+    padding: 1rem;
+    border-radius: 5px;
+    flex-direction: column;
+    gap: 1rem;
+    z-index: 999;          /* Below hamburger (z-index: 1000) */
+  }
+  .navbar.show {
+    display: flex;         /* Show when toggled */
+  }
+}
+
+
+/* Popup menu box (hidden initially) */
+.popup-menu {
+  display: none;
+  position: fixed; /* floats over content */
+  top: 80px;       /* adjust so it's below header/hamburger */
+  right: 20px;
+  background: #211a39;
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+  flex-direction: column;
+  gap: 1rem;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  min-width: 150px;
+}
+
+
+
+.popup-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+/* Show popup when toggled */
+.popup-menu.show {
+  display: flex;
+}
+
+
+
 .header {
   position: fixed;
   top: 0;
