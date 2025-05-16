@@ -1290,6 +1290,11 @@ form textarea {
   .content-skills {
     height: 100%;
     width: 100%;
+    
+  }
+
+  .heading-skills h5{
+    font-size: 1.5rem;
   }
   /* Skills Section */
   .skills {
@@ -1333,6 +1338,10 @@ form textarea {
   .project-content {
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 1rem;
+  }
+
+  .main-text h2{
+    font-size: 1.5rem;
   }
 
   .layer {
