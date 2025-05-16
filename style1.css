@@ -269,7 +269,8 @@ body {
   gap: 0.3rem;
   justify-content: center;
   padding: 8px 10px;
-  background: #211a39; /* Solid initial background */
+  /* background: #211a39; */
+  background-color: #1a0f2a; /* Solid initial background */
   /* border: 1px solid #7a04c2;
   color: white; */
 
@@ -945,9 +946,14 @@ form textarea {
   gap: 0.3rem;
   justify-content: center;
   padding: 10px 20px;
-  background: #211a39; /* Solid initial background */
-  border: 1px solid #7a04c2;
-  color: white;
+  /* background: #211a39;  */
+  background-color: #1a0f2a;/* Solid initial background */
+  /* border: 1px solid #7a04c2;
+  color: white; */
+
+  color: #7c3aed;
+  border: 2px solid #7c3aed;
+
   margin-bottom: 1rem;
   border-radius: 40px;
   text-decoration: none;
@@ -970,6 +976,10 @@ form textarea {
 
 .back-to-top:hover::before {
   transform: scaleX(1); /* Animate gradient in from left to right */
+}
+
+.back-to-top:hover {
+  color: white;
 }
 
 .skills {
