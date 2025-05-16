@@ -70,6 +70,12 @@ body {
   transform-origin: center;
 }
 
+@media (min-width: 769px) {
+  .hamburger {
+    display: none; /* Hide on larger screens */
+  }
+}
+
 
 /* Hide nav on mobile by default */
 @media (max-width: 768px) {
