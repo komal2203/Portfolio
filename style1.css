@@ -625,13 +625,15 @@ body {
   font-size: 0.8rem;
   font-weight: 400;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease, background 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   border-radius: 0.75rem; /* optional, feel free to uncomment */
 }
 .content-skills:hover {
-  transform: scale(1.1);
-  box-shadow: 0 10px 30px rgba(124, 58, 237, 0.25);
+box-shadow: 0 12px 32px rgba(124, 58, 237, 0.4),
+  0 0 8px rgba(124, 58, 237, 0.2);
 }
+
+
 
 .skill-icon {
   font-size: 3rem;
@@ -674,9 +676,10 @@ body {
   justify-content: center;
   padding: 8px 12px;
   background: #211a39; /* Solid initial background */
-  border: 1px solid #7a04c2;
+  /* border: 1px solid #7a04c2; */
+  border: 1.2px solid #530484;
   color: white;
-  border-radius: 10px;
+  border-radius: 15px;
   text-decoration: none;
   position: relative;
   overflow: hidden;
