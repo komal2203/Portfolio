@@ -50,6 +50,7 @@ body {
 }
 
 .hamburger{
+  display: none;
   cursor: pointer;
   z-index: 1000;
   right: 1rem;
@@ -70,11 +71,6 @@ body {
   transform-origin: center;
 }
 
-@media (min-width: 769px) {
-  .hamburger {
-    display: none; /* Hide on larger screens */
-  }
-}
 
 
 /* Hide nav on mobile by default */
@@ -93,6 +89,10 @@ body {
   }
   .navbar.show {
     display: flex;         /* Show when toggled */
+  }
+
+  .hamburger{
+    display: block;       /* Show hamburger on mobile */
   }
 }
 
