@@ -1226,7 +1226,7 @@ form textarea {
   .scroll-down {
     position: absolute;
     left: 50%;
-    bottom: 50px; /* move this as needed */
+    bottom: 40px; /* move this as needed */
     transform: translateX(-50%); /* center horizontally */
     z-index: 100;
 }
