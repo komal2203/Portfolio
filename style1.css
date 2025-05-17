@@ -1224,9 +1224,13 @@ form textarea {
   }
 
   .scroll-down {
-    left: 47%;
-    /* display: none; */
-  }
+    position: absolute;
+    left: 50%;
+    bottom: 100px; /* move this as needed */
+    transform: translateX(-50%); /* center horizontally */
+    z-index: 100;
+}
+
 
   .img-container {
     display: flex;
@@ -1234,7 +1238,7 @@ form textarea {
     align-items:center;
     height: 100%;
     /* margin-top: 20px; */
-    margin-top: -60px;
+    margin-top: -90px;
     flex-wrap: wrap;
   }
 
