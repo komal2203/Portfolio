@@ -1554,6 +1554,10 @@ form textarea {
     font-size: 0.8rem;
   }
 
+  .highlights-section {
+    display: none;
+  }
+
   .heading-skills {
     text-align: center;
     font-size: 1.5rem;
