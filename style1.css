@@ -630,7 +630,8 @@ body {
 
 .stat-card:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(168, 85, 247, 0.4);
+  box-shadow: 0 12px 32px rgba(124, 58, 237, 0.4),
+  0 0 8px rgba(124, 58, 237, 0.2);
 }
 
 /* .stat-icon {
