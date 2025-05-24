@@ -393,6 +393,7 @@ body {
 .btn-box:hover::before {
   transform: scaleX(1); /* Animate gradient in from left to right */
 }
+
 .btn-box:hover {
   color: white;
 }
@@ -656,97 +657,7 @@ body {
   margin: 1rem;
 }
 
-.profiles {
-  color: white;
-  text-align: left;
-  text-decoration: none;
-}
 
-.profiles:hover {
-  color: #7c3aed; /* Violet accent for 'Skills' word */
-}
-
-.services {
-  color: #7c3aed; /* Violet accent for 'Skills' word */
-
-  font-size: 1.2rem;
-  line-height: 1.3rem;
-  margin-bottom: 2rem;
-  margin-top: 4rem;
-}
-.container {
-  padding: 2rem;
-}
-.sub-title {
-  text-align: center;
-  font-size: 3rem;
-  padding-bottom: 2rem;
-}
-.sub-title span {
-  color: #7c3aed;
-}
-.services-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 2rem;
-  margin-top: 2rem;
-}
-.services-list div {
-  background-image: radial-gradient(
-    circle farthest-corner at 3.2% 49.6%,
-    rgba(56, 26, 81, 0.87) 0%,
-    rgba(161, 10, 144, 0.72) 83.6%
-  );
-  padding: 1.5rem;
-  font-size: 1rem;
-  font-weight: 400;
-  border-radius: 10px;
-  transition: background 0.5s transform 0.5;
-  box-shadow: 2px 2px 30px rgba(161, 10, 144, 0.72),
-    1px 1px 20px rgb(194, 2, 194), 1px 1px 10px rgb(217, 160, 244);
-}
-
-.services-list div:hover {
-  transform: scale(1.1);
-  transition-duration: 0.1s;
-}
-.services-list div i {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-}
-.services-list h2 {
-  font-size: 1.7rem;
-  margin-bottom: 0.5rem;
-  font-weight: 500;
-}
-
-.services-list div a {
-  text-decoration: none;
-  color: #7c3aed;
-  font-size: 1rem;
-  margin-top: 1rem;
-  display: inline-block;
-}
-
-.read {
-  display: inline-block;
-  padding: 0.7rem 1.5rem;
-  border-radius: 25px;
-  font-size: 1.2rem;
-  color: #7c3aed;
-  font-weight: 500;
-  opacity: 0;
-  animation: slideTop 1s ease forwards;
-  box-shadow: 0 0 10px rgb(194, 2, 194), 0 0 5px rgb(254, 111, 254);
-}
-
-.read:hover {
-  box-shadow: 0 0 10px rgb(189, 20, 189), 0 0 20px rgb(236, 201, 252),
-    0 0 15px white;
-  transform: scale(1.1);
-  background-color: rgb(178, 35, 186);
-  color: #ededed;
-}
 .skills {
   background-color: #1a0f2a;
 }
@@ -1497,7 +1408,7 @@ form textarea {
 
   .btn-box {
     font-size: 0.8rem;
-    width: 40%;
+    width: 50%;
     padding: 10px 20px;
   }
 
