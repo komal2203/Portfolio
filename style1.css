@@ -168,10 +168,10 @@ body {
 
 .navbar a {
   display: inline-block;
-  font-size: 12px;
+  font-size: 8px;
   color: #fff;
   text-decoration: none;
-  margin-left: 20px;
+  margin-left: 13px;
   transition: 0.3s;
   opacity: 0;
   animation: slideTop 0.5s ease forwards;
