@@ -176,12 +176,15 @@ body {
 }
 
 .navbar a {
-  /* display: inline-block; */
-  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
   color: #fff;
   text-decoration: none;
-  margin-left: 20px;
+  /* margin-left: 20px; */
   transition: 0.3s;
+  height: 100%;
   opacity: 0;
   animation: slideTop 0.5s ease forwards;
   animation-delay: calc(0.1s * var(--i));
