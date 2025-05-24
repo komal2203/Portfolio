@@ -176,7 +176,7 @@ body {
 }
 
 .navbar a {
-  display: inline-block;
+  /* display: inline-block; */
   font-size: 30px;
   color: #fff;
   text-decoration: none;
