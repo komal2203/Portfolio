@@ -498,7 +498,7 @@ body {
   align-items: center;
   padding: 1rem;
   width: 100%;
-  max-width: 800px;
+  max-width: 700px;
   margin: 0 auto;
   border-radius: 16px;
   overflow: hidden;
@@ -513,7 +513,7 @@ body {
   mix-blend-mode: lighten;
   border-radius: 15px;
   transition: transform 0.4s ease;
-  filter: blur(1px);
+  filter: blur(1.1px);
   mix-blend-mode: lighten;
   opacity: 0.8;
   transition: all 0.3s ease;
