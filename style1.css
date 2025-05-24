@@ -170,7 +170,7 @@ body {
   display: flex;
   align-items: center;
   justify-content:flex-end;
-  gap: 0.3rem;
+  gap: 1rem;
   /* position: relative; */
   /* z-index: 1000; */
 }
