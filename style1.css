@@ -169,10 +169,10 @@ body {
 .navbar {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   gap: 1rem;
-  position: relative;
-  z-index: 1000;
+  /* position: relative; */
+  /* z-index: 1000; */
 }
 
 .navbar a {
