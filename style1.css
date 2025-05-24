@@ -24,8 +24,9 @@ body {
 }
 
 .highlight {
-  /* color: #c084fc; */
-  color: #9d6ef0;
+  color: #c084fc;
+  /* color: #9d6ef0; */
+  
 }
 .gradient {
   background: linear-gradient(
@@ -910,6 +911,8 @@ body {
   position: relative;
 }
 
+
+
 .card .card-image img {
   width: 100%;
   padding: 10px;
@@ -955,6 +958,15 @@ body {
   margin-bottom: 15px;
 }
 
+.card .card-content .card-platform  {
+  /* color: #7c3aed; */
+  color: #c084fc;
+  letter-spacing: 0.1rem;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+
+}
+
 .card .card-content p {
   /* color: rgb(62, 61, 61); */
   font-size: 0.95rem;
@@ -980,7 +992,7 @@ body {
   padding: 10px 20px;
   font-size: 0.81rem;
   color: #7c3aed;
-  border: 2px solid #7c3aed;
+  border: 1px solid #7c3aed;
   text-decoration: none;
   overflow: hidden;
   z-index: 1;
@@ -1011,7 +1023,9 @@ body {
   width: 15px;
   overflow: hidden;
   opacity: 1;
-  background: #a487f9;
+  /* background: #a487f9; */
+  background: #c084fc;
+
 }
 
 .wrapper .swiper-pagination-bullet-active::before {
