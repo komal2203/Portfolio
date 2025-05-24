@@ -587,6 +587,70 @@ body {
   line-height: 2rem;
   margin: 10px 0 20px;
 }
+
+
+
+
+/* Font Awesome (add in <head> of your HTML) */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+
+.highlights-section {
+  background-color: #1a0f2a;
+  color: #fff;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.3rem;
+  font-weight: 700;
+  /* color: #c084fc; */
+  margin-bottom: 50px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.stat-card {
+  /* background: rgba(255, 255, 255, 0.07); */
+  /* border: 1px solid #a855f7; */
+  backdrop-filter: blur(10px);
+  /* background-color: #1a0f2a; */
+  background: #211a39;
+
+  border-radius: 20px;
+  padding: 30px 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.4);
+}
+
+/* .stat-icon {
+  font-size: 2.5rem;
+  color: #c084fc;
+  margin-bottom: 15px;
+} */
+
+.stat-number {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #e9d5ff;
+}
+
+.stat-label {
+  margin-top: 8px;
+  font-size: 1rem;
+  color: #d8b4fe;
+}
+
 #btn-2 {
   margin: 1rem;
 }

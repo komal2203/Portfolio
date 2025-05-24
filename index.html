@@ -17,6 +17,8 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </head>
   <body>
@@ -152,6 +154,68 @@
         <!-- <a href="#projects" class="btn-box" id="btn-2">My Projects</a> -->
       </div>
     </section>
+
+    <!-- <section id="highlights" class="highlights-section">
+      <h2 class="section-title">Stats & <span class="gradient">Highlights</span></h2>
+      <div class="stats-grid">
+        
+        <div class="stat-card">
+          <div class="stat-icon"><i class="fas fa-brain"></i></div>
+          <h3 class="stat-number">500+</h3>
+          <p class="stat-label">CP Problems Solved</p>
+        </div>
+    
+        <div class="stat-card">
+          <div class="stat-icon"><i class="fab fa-github"></i></div>
+          <h3 class="stat-number">800+</h3>
+          <p class="stat-label">GitHub Contributions</p>
+        </div>
+    
+        <div class="stat-card">
+          <div class="stat-icon"><i class="fas fa-trophy"></i></div>
+          <h3 class="stat-number">6</h3>
+          <p class="stat-label">Hackathons Attended</p>
+        </div>
+    
+        <div class="stat-card">
+          <div class="stat-icon"><i class="fas fa-star"></i></div>
+          <h3 class="stat-number">120+</h3>
+          <p class="stat-label">Project Stars/Downloads</p>
+        </div>
+    
+      </div>
+    </section> -->
+    <section id="highlights" class="highlights-section">
+      <h2 class="section-title">Stats & <span class="gradient">Highlights</span></h2>
+      <div class="stats-grid">
+        
+        <div class="stat-card">
+          <!-- <div class="stat-icon"><i class="fas fa-puzzle-piece"></i></div> -->
+          <h3 class="stat-number" data-target="700">0</h3>
+          <p class="stat-label">DSA Problems Solved</p>
+        </div>
+    
+        <div class="stat-card">
+          <!-- <div class="stat-icon"><i class="fab fa-github"></i></div> -->
+          <h3 class="stat-number" data-target="500">0</h3>
+          <p class="stat-label">GitHub Contributions</p>
+        </div>
+    
+        <!-- <div class="stat-card">
+          <div class="stat-icon"><i class="fas fa-trophy"></i></div>
+          <h3 class="stat-number" data-target="6">0</h3>
+          <p class="stat-label">Hackathons Attended</p>
+        </div> -->
+    
+        <div class="stat-card">
+          <!-- <div class="stat-icon"><i class="fas fa-star"></i></div> -->
+          <h3 class="stat-number" data-target="15">0</h3>
+          <p class="stat-label">Projects</p>
+        </div>
+    
+      </div>
+    </section>
+    
 
     <!-- <section>
       <div class="services">
@@ -1315,29 +1379,72 @@ document.addEventListener('click', (e) => {
 </script>
 
 
-       <script>
-      function disableLeftRightAnimationsOnMobile() {
-        if (window.innerWidth <= 768) {
-          // 📱 mobile screen
-          document
-            .querySelectorAll('[data-aos="fade-left"], [data-aos="fade-right"]')
-            .forEach(function (el) {
-              el.removeAttribute('data-aos');  // ❌ disable only fade-left and fade-right
+            <script>
+            function disableLeftRightAnimationsOnMobile() {
+              if (window.innerWidth <= 768) {
+                // 📱 mobile screen
+                document
+                  .querySelectorAll('[data-aos="fade-left"], [data-aos="fade-right"]')
+                  .forEach(function (el) {
+                    el.removeAttribute('data-aos');  // ❌ disable only fade-left and fade-right
+                  });
+              }
+            }
+
+            document.addEventListener("DOMContentLoaded", function () {
+              disableLeftRightAnimationsOnMobile(); // first remove left/right on mobile
+              AOS.init({
+                once: true,
+              });
             });
+
+            window.addEventListener("resize", function () {
+              disableLeftRightAnimationsOnMobile();
+              AOS.refreshHard(); // Refresh AOS after changes
+            });
+          </script>
+
+      <script>
+        const counters = document.querySelectorAll('.stat-number');
+        let animated = false;
+
+        function animateCounts() {
+          if (animated) return;
+
+          counters.forEach(counter => {
+            const target = +counter.getAttribute('data-target');
+            const duration = 1000;
+            const start = 0;
+            const startTime = performance.now();
+
+            function update(currentTime) {
+              const elapsed = currentTime - startTime;
+              const progress = Math.min(elapsed / duration, 1);
+              const value = Math.floor(progress * target);
+              counter.textContent = value + (target > 10 ? "+" : "");
+
+              if (progress < 1) {
+                requestAnimationFrame(update);
+              }
+            }
+
+            requestAnimationFrame(update);
+          });
+
+          animated = true;
         }
-      }
 
-      document.addEventListener("DOMContentLoaded", function () {
-        disableLeftRightAnimationsOnMobile(); // first remove left/right on mobile
-        AOS.init({
-          once: true,
-        });
-      });
+        function onScroll() {
+          const section = document.getElementById("highlights");
+          const rect = section.getBoundingClientRect();
+          if (rect.top < window.innerHeight && rect.bottom >= 0) {
+            animateCounts();
+            window.removeEventListener("scroll", onScroll);
+          }
+        }
 
-      window.addEventListener("resize", function () {
-        disableLeftRightAnimationsOnMobile();
-        AOS.refreshHard(); // Refresh AOS after changes
-      });
-    </script>
+        window.addEventListener("scroll", onScroll);
+      </script>
+
   </body>
 </html>
