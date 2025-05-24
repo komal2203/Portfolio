@@ -169,7 +169,7 @@ body {
 .navbar {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content:flex-end;
   gap: 0.3rem;
   /* position: relative; */
   /* z-index: 1000; */
@@ -183,7 +183,7 @@ body {
   color: #fff;
   text-decoration: none;
   /* margin-left: 20px; */
-  transition: 0.3s;
+  transition: 0.4s;
   height: 100%;
   opacity: 0;
   animation: slideTop 0.5s ease forwards;
