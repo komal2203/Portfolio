@@ -170,7 +170,7 @@ body {
   display: flex;
   align-items: center;
   justify-content:flex-end;
-  gap: 1rem;
+  gap: 1.2rem;
   /* position: relative; */
   /* z-index: 1000; */
 }
@@ -709,6 +709,16 @@ body {
 }
 .skill-content {
   text-align: center;
+}
+
+.profiles a{
+  text-decoration: none;
+  color: white;
+  font-size: 0.8rem;
+}
+
+.profiles a:hover {
+  color: #7c3aed;
 }
 
 .main-text {
