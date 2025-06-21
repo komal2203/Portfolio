@@ -899,14 +899,15 @@ body {
   font-size: 0.8rem;
   line-height: 1.2rem;
   padding: 1rem;
-  padding-top: 0;
+  padding-top: 0.2rem;
 }
 
 .layer h5 {
   font-size: 1.2rem;
   margin-bottom: 0.2rem;
-  letter-spacing: 0.04rem;
-  font-family: "Times New Roman", Times, serif;
+  letter-spacing: 0.05rem;
+  /* font-family: "Times New Roman", Times, serif; */
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   opacity: 0;
   animation: slideBottom 0.5s ease forwards;
 }
@@ -1792,65 +1793,42 @@ form textarea {
 
 /* View More button - hidden by default */
 .view-more-btn {
-  display: flex;
-  align-items: center;
-  align-self: center;
-  max-width: 40%;
-  font-size: 13px;
-  gap: 0.3rem;
+  display: none !important;
   justify-content: center;
-  padding: 8px 10px;
-  /* background: #211a39; */
-  background-color: #1a0f2a;
-  /* Solid initial background */
-  /* border: 1px solid #7a04c2;
-  color: white; */
-
-  /* color: #9e41fc;
-  border: 2px solid #a246fd; */
-
-  color: #7c3aed;
-  border: 2px solid #7c3aed;
-  margin-bottom: 1rem;
-  border-radius: 40px;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 2rem auto 0;
+  padding: 0.6rem 1rem;
+  background: linear-gradient(135deg, #6600c5, #9b42d6) !important;
+  color: white !important;
   text-decoration: none;
+  border-radius: 40px;
+  font-size: 0.7rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(102, 0, 197, 0.3);
+  width: fit-content;
   position: relative;
-  overflow: hidden;
-  z-index: 1;
-  opacity: 0;
-  transition: transform 0.3s ease;
-}
-
-.view-more-btn::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(90deg, #7506a5, #9333ea, #7c3aed);
-  z-index: -1;
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.8s ease;
-}
-
-.view-more-btn:hover::before {
-  transform: scaleX(1);
-  /* Animate gradient in from left to right */
+  z-index: 1000;
 }
 
 .view-more-btn:hover {
-  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 0, 197, 0.4);
+  background: linear-gradient(135deg, #7a00e6, #a855e6) !important;
 }
+
 
 /* Mobile styles - make sure this comes AFTER the default styles */
 @media screen and (max-width: 768px) {
   .hide-mobile {
     display: none !important;
-    /* Hide on mobile */
   }
-
+  
   .view-more-btn {
     display: flex !important;
-    /* Show on mobile */
+    background: linear-gradient(135deg, #6600c5, #9b42d6) !important;
+    color: white !important;
   }
 }
 
@@ -1858,11 +1836,9 @@ form textarea {
 @media screen and (min-width: 769px) {
   .view-more-btn {
     display: none !important;
-    /* Ensure it's hidden on desktop */
   }
-
+  
   .hide-mobile {
     display: block !important;
-    /* Ensure hidden projects show on desktop */
   }
 }
