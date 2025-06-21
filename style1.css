@@ -242,12 +242,11 @@ body {
 
 .me-img {
   margin-left: 3rem;
-  width: 70%;
-  height: 70%;
+  width: 50%;
+  height: 50%;
   border-radius: 250px;
   border: 5px solid white;
-
-  box-shadow: 0 0 5px rgba(124, 58, 237, 0.95), 0 0 15px rgba(124, 58, 237, 0.7),
+  box-shadow: 0 0 5px rgba(138, 78, 241, 0.95), 0 0 15px rgba(144, 86, 246, 0.7),
     0 0 30px rgba(124, 58, 237, 0.6), 0 0 50px rgba(124, 58, 237, 0.4);
 }
 
@@ -1824,7 +1823,7 @@ form textarea {
   .hide-mobile {
     display: none !important;
   }
-  
+
   .view-more-btn {
     display: flex !important;
     background: linear-gradient(135deg, #6600c5, #9b42d6) !important;
@@ -1837,7 +1836,7 @@ form textarea {
   .view-more-btn {
     display: none !important;
   }
-  
+
   .hide-mobile {
     display: block !important;
   }
