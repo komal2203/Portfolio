@@ -2,9 +2,10 @@
 
 /* @import url("https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Palanquin:wght@100;200;300;400;500;600;700&display=swap"); */
 :root {
-  --box-bg: #17112b; /* Replace with your custom color */
+  --box-bg: #17112b;
+  /* Replace with your custom color */
 }
-  
+
 * {
   scroll-behavior: smooth;
   margin: 0;
@@ -18,6 +19,7 @@
 body {
   color: #ededed;
   overflow-x: hidden;
+  letter-spacing: 0.04rem;
   /* background-color: purple; */
   /* background-image: radial-gradient(
     circle farthest-corner at 3.2% 49.6%,
@@ -27,6 +29,7 @@ body {
   background-color: #1a0f2a;
   /* Deep slate background for contrast */
 }
+
 #bg-video {
   position: fixed;
   top: 0;
@@ -36,36 +39,40 @@ body {
   width: 100vw;
   height: 100vh;
   object-fit: cover;
-  z-index: -1; /* Make sure it's behind everything */
-  opacity: 0.5; /* Adjust for readability, 0.5 is a good start */
-  pointer-events: none; /* So it doesn't block clicks */
+  z-index: -1;
+  /* Make sure it's behind everything */
+  opacity: 0.5;
+  /* Adjust for readability, 0.5 is a good start */
+  pointer-events: none;
+  /* So it doesn't block clicks */
 }
+
 .bg-overlay {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: rgba(26, 15, 42, 0.5); /* Adjust color and opacity as needed */
+  background: rgba(26, 15, 42, 0.5);
+  /* Adjust color and opacity as needed */
   z-index: 0;
   pointer-events: none;
 }
+
 .highlight {
   color: #c084fc;
   /* color: #9d6ef0; */
 }
 
 .gradient {
-  background: linear-gradient(
-    to right,
-    #5020b1,
-    #9b42d6,
-    #6600c5,
-    #6541f5,
-    #bc26f8,
-    #a614d2,
-    #7300ad
-  );
+  background: linear-gradient(to right,
+      #5020b1,
+      #9b42d6,
+      #6600c5,
+      #6541f5,
+      #bc26f8,
+      #a614d2,
+      #7300ad);
   background-size: 200%;
   background-clip: text;
   -webkit-background-clip: text;
@@ -167,11 +174,9 @@ body {
   width: 100%;
   padding: 10px 10%;
 
-  background: linear-gradient(
-    135deg,
-    rgba(139, 12, 242, 0.9),
-    rgba(52, 4, 65, 0.9)
-  );
+  background: linear-gradient(135deg,
+      rgba(139, 12, 242, 0.9),
+      rgba(52, 4, 65, 0.9));
 
   display: flex;
   justify-content: space-between;
@@ -861,7 +866,7 @@ body {
 .row {
   width: 100%;
   height: 100%;
-  min-height: 420px;
+  min-height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -922,6 +927,7 @@ body {
 .row p {
   /* margin-bottom: 0.2rem; */
   margin-top: 0.5rem;
+
 }
 
 .layer {
@@ -979,7 +985,7 @@ body {
   /* background-color: #1a0f2a; */
   /* background: #211a39; */
   background: var(--box-bg);
-
+  min-height: 400px;
   border-radius: 1rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -998,6 +1004,7 @@ body {
 
 .card .card-image {
   position: relative;
+  height: 50%;
 }
 
 .card .card-image img {
@@ -1031,6 +1038,7 @@ body {
 .card .card-content {
   flex: 1;
   display: flex;
+  height: 50%;
   flex-direction: column;
   text-align: center;
   padding: 10px 25px 25px;
@@ -1466,6 +1474,7 @@ form textarea {
 
 /* Mobile responsiveness for screens up to 768px */
 @media screen and (max-width: 650px) {
+
   /* General */
   body {
     overflow-x: hidden;
@@ -1740,10 +1749,17 @@ form textarea {
   /* .card-content.card-text{
     font-size: 0.7rem;
   } */
+  .card .card-content .card-title {
+    font-size: 0.9rem;
+  }
 
   .card .card-content p {
     font-size: 0.7rem;
     margin-bottom: 0;
+  }
+
+  .card .card-footer .card-button {
+    font-size: 0.7rem;
   }
 
   .card-container .card {
