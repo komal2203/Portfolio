@@ -1,7 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Playwrite+AR&family=Playwrite+BE+WAL:wght@350&family=Playwrite+HU:wght@100..400&display=swap");
 
 /* @import url("https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Palanquin:wght@100;200;300;400;500;600;700&display=swap"); */
-
+:root {
+  --box-bg: #17112b; /* Replace with your custom color */
+}
+  
 * {
   scroll-behavior: smooth;
   margin: 0;
@@ -24,7 +27,29 @@ body {
   background-color: #1a0f2a;
   /* Deep slate background for contrast */
 }
-
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1; /* Make sure it's behind everything */
+  opacity: 0.5; /* Adjust for readability, 0.5 is a good start */
+  pointer-events: none; /* So it doesn't block clicks */
+}
+.bg-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(26, 15, 42, 0.5); /* Adjust color and opacity as needed */
+  z-index: 0;
+  pointer-events: none;
+}
 .highlight {
   color: #c084fc;
   /* color: #9d6ef0; */
@@ -527,8 +552,8 @@ body {
 }
 
 .about-img img {
-  height: 100%;
-  width: 90%;
+  height: 80%;
+  width: 70%;
   border-radius: 50rem;
 }
 
@@ -634,7 +659,7 @@ body {
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
 
 .highlights-section {
-  background-color: #1a0f2a;
+  /* background-color: #1a0f2a; */
   color: #fff;
   padding: 80px 20px;
   text-align: center;
@@ -660,7 +685,9 @@ body {
   /* border: 1px solid #a855f7; */
   backdrop-filter: blur(10px);
   /* background-color: #1a0f2a; */
-  background: #211a39;
+  /* background: #211a39; */
+  /* background: #17112b; */
+  background: var(--box-bg);
 
   border-radius: 20px;
   padding: 25px 15px;
@@ -724,7 +751,9 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #211a39;
+  /* background: #211a39; */
+  background: var(--box-bg);
+
 
   padding: 0.5rem;
   font-size: 0.8rem;
@@ -794,13 +823,13 @@ body {
   align-self: center;
   gap: 0.3rem;
   justify-content: center;
-  padding: 7px 11px;
+  padding: 8px 12px;
   background: #211a39;
   /* Solid initial background */
   /* border: 1px solid #7a04c2; */
   border: 1.2px solid #530484;
   color: white;
-  border-radius: 15px;
+  border-radius: 10px;
   text-decoration: none;
   position: relative;
   overflow: hidden;
@@ -832,6 +861,7 @@ body {
 .row {
   width: 100%;
   height: 100%;
+  min-height: 420px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -840,7 +870,9 @@ body {
   /* border: 1px solid white; */
   border-radius: 1rem;
 
-  background: #211a39;
+  /* background: #211a39; */
+  background: var(--box-bg);
+
   /* Slightly lighter than the section background */
   overflow: hidden;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
@@ -867,7 +899,7 @@ body {
 }
 
 .row:hover img {
-  transform: scale(1.1);
+  transform: scale(1.05);
   overflow: hidden;
 }
 
@@ -903,6 +935,7 @@ body {
 .layer h5 {
   font-size: 1.2rem;
   margin-bottom: 0.2rem;
+  margin-top: 0.5rem;
   letter-spacing: 0.05rem;
   /* font-family: "Times New Roman", Times, serif; */
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
@@ -944,7 +977,9 @@ body {
   display: flex;
   flex-direction: column;
   /* background-color: #1a0f2a; */
-  background: #211a39;
+  /* background: #211a39; */
+  background: var(--box-bg);
+
   border-radius: 1rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -1217,6 +1252,20 @@ card-container:hover .wrapper .swiper-pagination-bullet-active::before {
   overflow: hidden;
 }
 
+.contact-img {
+  padding: 2rem;
+  display: flex;
+  min-width: 40%;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-img img {
+  height: 100%;
+  width: 90%;
+  border-radius: 50rem;
+}
+
 .contact-form {
   position: relative;
   display: none;
@@ -1336,7 +1385,8 @@ form textarea {
 .skills {
   padding: 5rem 2rem;
   /* background-color: #0f172a; */
-  background-color: #1a0f2a;
+  /* background-color: #1a0f2a; */
+  background: transparent;
   /* Deep slate background for contrast */
   color: #f1f5f9;
   /* Light text */
@@ -1367,7 +1417,9 @@ form textarea {
 
 .skill-box {
   /* background: #1e293b; Slightly lighter than the section background */
-  background: #211a39;
+  /* background: #211a39; */
+  background: var(--box-bg);
+
   padding: 2rem;
   border-radius: 1.5rem;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
@@ -1577,7 +1629,7 @@ form textarea {
 
   /* Skills Section */
   .skills {
-    background-color: #1a0f2a;
+    /* background-color: #1a0f2a; */
     padding: 1.5rem 1rem;
   }
 
