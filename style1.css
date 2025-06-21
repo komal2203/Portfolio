@@ -28,18 +28,19 @@ body {
 .highlight {
   color: #c084fc;
   /* color: #9d6ef0; */
-
 }
 
 .gradient {
-  background: linear-gradient(to right,
-      #5020b1,
-      #9b42d6,
-      #6600c5,
-      #6541f5,
-      #bc26f8,
-      #a614d2,
-      #7300ad);
+  background: linear-gradient(
+    to right,
+    #5020b1,
+    #9b42d6,
+    #6600c5,
+    #6541f5,
+    #bc26f8,
+    #a614d2,
+    #7300ad
+  );
   background-size: 200%;
   background-clip: text;
   -webkit-background-clip: text;
@@ -141,9 +142,11 @@ body {
   width: 100%;
   padding: 10px 10%;
 
-  background: linear-gradient(135deg,
-      rgba(139, 12, 242, 0.9),
-      rgba(52, 4, 65, 0.9));
+  background: linear-gradient(
+    135deg,
+    rgba(139, 12, 242, 0.9),
+    rgba(52, 4, 65, 0.9)
+  );
 
   display: flex;
   justify-content: space-between;
@@ -627,11 +630,8 @@ body {
   margin: 10px 0 20px;
 }
 
-
-
-
 /* Font Awesome (add in <head> of your HTML) */
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
 
 .highlights-section {
   background-color: #1a0f2a;
@@ -694,7 +694,6 @@ body {
 #btn-2 {
   margin: 1rem;
 }
-
 
 .skills {
   background-color: #1a0f2a;
@@ -795,13 +794,13 @@ body {
   align-self: center;
   gap: 0.3rem;
   justify-content: center;
-  padding: 8px 12px;
+  padding: 6px 10px;
   background: #211a39;
   /* Solid initial background */
   /* border: 1px solid #7a04c2; */
   border: 1.2px solid #530484;
   color: white;
-  border-radius: 10px;
+  border-radius: 20px;
   text-decoration: none;
   position: relative;
   overflow: hidden;
@@ -906,7 +905,7 @@ body {
   margin-bottom: 0.2rem;
   letter-spacing: 0.05rem;
   /* font-family: "Times New Roman", Times, serif; */
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   opacity: 0;
   animation: slideBottom 0.5s ease forwards;
 }
@@ -966,15 +965,12 @@ body {
   position: relative;
 }
 
-
-
 .card .card-image img {
   width: 100%;
   padding: 10px;
   border-radius: 22px;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
-
 
   aspect-ratio: 16/9;
   object-fit: cover;
@@ -1018,9 +1014,8 @@ body {
   /* color: #7c3aed; */
   color: #c084fc;
   letter-spacing: 0.1rem;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
-
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 .card .card-content p {
@@ -1081,7 +1076,6 @@ body {
   opacity: 1;
   /* background: #a487f9; */
   background: #c084fc;
-
 }
 
 .wrapper .swiper-pagination-bullet-active::before {
@@ -1420,7 +1414,6 @@ form textarea {
 
 /* Mobile responsiveness for screens up to 768px */
 @media screen and (max-width: 650px) {
-
   /* General */
   body {
     overflow-x: hidden;
@@ -1569,8 +1562,7 @@ form textarea {
   }
 
   .container-skills {
-    grid-template-columns: repeat(2,
-        minmax(100px, 1fr));
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
     /* 2 columns on small screens */
   }
 
@@ -1816,7 +1808,6 @@ form textarea {
   box-shadow: 0 6px 20px rgba(102, 0, 197, 0.4);
   background: linear-gradient(135deg, #7a00e6, #a855e6) !important;
 }
-
 
 /* Mobile styles - make sure this comes AFTER the default styles */
 @media screen and (max-width: 768px) {
