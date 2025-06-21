@@ -351,7 +351,7 @@ body {
   display: flex;
   align-items: center;
   align-self: center;
-  max-width: 30%;
+  max-width: 40%;
   font-size: 13px;
   gap: 0.3rem;
   justify-content: center;
@@ -1695,5 +1695,50 @@ form textarea {
 
   .back-to-top {
     font-size: 0.8rem;
+  }
+}
+
+/* Hide class for mobile */
+.hide-mobile {
+  display: block; /* Show by default on desktop */
+}
+
+/* View More button - hidden by default */
+.view-more-btn {
+  display: none; /* Hidden by default on desktop */
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 2rem auto 0;
+  padding: 1rem 2rem;
+  background: linear-gradient(135deg, #6600c5, #9b42d6);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(102, 0, 197, 0.3);
+  width: fit-content;
+}
+
+.view-more-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 0, 197, 0.4);
+  background: linear-gradient(135deg, #7a00e6, #a855e6);
+}
+
+.view-more-btn i {
+  font-size: 1.2rem;
+}
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+  .hide-mobile {
+    display: none; /* Hide on mobile */
+  }
+  
+  .view-more-btn {
+    display: flex; /* Show on mobile */
   }
 }

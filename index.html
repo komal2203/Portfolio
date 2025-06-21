@@ -1,161 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-      <link rel="stylesheet" href="style1.css" />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
-     <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style1.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  </head>
-  <body>
-    <header class="header">
-      <a href="#" class="logo">Portfolio</a>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-      <div class="navbar">
-        <a href="#" style="--i: 1" class="active">Home</a>
-        <a href="#about" style="--i: 2">About me</a>
-        <!-- <a href="#techstack" style="--i: 3">Tech Stack</a> -->
-        <a href="#skills" style="--i: 3">Skills</a>
-        <a href="#projects" style="--i: 4">Projects</a>
-        <a href="#awards" style="--i: 5">Awards</a>
-        <!-- <a href="#certifications" style="--i:6 ">Certifications</a> -->
-        <a href="#contact" style="--i: 6">Contact Me</a>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <a href="#" class="logo">Portfolio</a>
+
+    <div class="navbar">
+      <a href="#" style="--i: 1" class="active">Home</a>
+      <a href="#about" style="--i: 2">About me</a>
+      <!-- <a href="#techstack" style="--i: 3">Tech Stack</a> -->
+      <a href="#skills" style="--i: 3">Skills</a>
+      <a href="#projects" style="--i: 4">Projects</a>
+      <a href="#awards" style="--i: 5">Awards</a>
+      <!-- <a href="#certifications" style="--i:6 ">Certifications</a> -->
+      <a href="#contact" style="--i: 6">Contact Me</a>
+    </div>
+  </header>
+
+  <section class="home">
+    <div class="home-content">
+      <h3>Hello,It's Me 👋</h3>
+      <h1><span class="gradient">Komal Meena</span></h1>
+      <div class="hamburger" id="hamburger">
+        <!-- Hamburger icon: 3 lines -->
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
-    </header>
+      <!-- The small popup box with links -->
+      <div class="popup-menu" id="popupMenu">
+        <a href="#" class="active">Home</a>
+        <a href="#about">About me</a>
+        <a href="#techstack">Tech Stack</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#awards">Awards</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#contact">Contact Me</a>
+      </div>
+      <h3>And I'm a <span class="text"></span></h3>
+      <p style="line-height: 1.3rem;">
+        I'm a <span class="highlight">Full Stack Developer</span> and a <span class="highlight">Software
+          Engineering</span> student at Delhi Technological University (DTU) 💻, with a strong passion for creating
+        elegant, responsive, and user-centric web applications 🌐.
+      </p>
+      <p style="line-height: 1.2rem;">
+        I thrive on the creative side of frontend design, where every project
+        is a new canvas.
+      </p>
 
-    <section class="home">
-      <div class="home-content">
-        <h3>Hello,It's Me 👋</h3>
-        <h1><span class="gradient">Komal Meena</span></h1>
-        <div class="hamburger" id="hamburger">
-          <!-- Hamburger icon: 3 lines -->
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-          <!-- The small popup box with links -->
-        <div class="popup-menu" id="popupMenu">
-          <a href="#" class="active">Home</a>
-          <a href="#about">About me</a>
-          <a href="#techstack">Tech Stack</a>
-          <a href="#skills">Skills</a>
-          <a href="#projects">Projects</a>
-          <a href="#awards">Awards</a>
-          <a href="#certifications">Certifications</a>
-          <a href="#contact">Contact Me</a>
-        </div>
-        <h3>And I'm a <span class="text"></span></h3>
-        <p style="line-height: 1.3rem;">
-          I’m a <span class="highlight">Full Stack Developer</span> and a <span class="highlight">Software Engineering</span> student at Delhi Technological University (DTU) 💻, with a strong passion for creating elegant, responsive, and user-centric web applications 🌐.
-        </p>
-        <p style="line-height: 1.2rem;">
-          I thrive on the creative side of frontend design, where every project
-          is a new canvas.
-        </p>
-
-        <div class="home-sci">
-          <!-- <a href="#" style="--i: 7"><i class="bx bxl-facebook"></i></a> -->
-          <a href="https://www.instagram.com/komal__2203/" style="--i: 8"
-            ><i class="bx bxl-instagram"></i
-          ></a>
-          <a href="https://www.linkedin.com/in/komalmeena2203/" style="--i: 9"
-            ><i class="bx bxl-linkedin"></i
-          ></a>
-          <a href="https://github.com/komal2203" style="--i: 9"
-            ><i class="bx bxl-github"></i
-          ></a>
-          <!-- <a href="#" style="--i: 10"><i class="bx bxl-whatsapp"></i></a> -->
+      <div class="home-sci">
+        <!-- <a href="#" style="--i: 7"><i class="bx bxl-facebook"></i></a> -->
+        <a href="https://www.instagram.com/komal__2203/" style="--i: 8"><i class="bx bxl-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/komalmeena2203/" style="--i: 9"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://github.com/komal2203" style="--i: 9"><i class="bx bxl-github"></i></a>
+        <!-- <a href="#" style="--i: 10"><i class="bx bxl-whatsapp"></i></a> -->
 
 
-        </div>
+      </div>
 
-          
-          <div class="scroll-down" onclick="document.querySelector('#about').scrollIntoView({ behavior: 'smooth' });"></div>
 
-        
+      <div class="scroll-down" onclick="document.querySelector('#about').scrollIntoView({ behavior: 'smooth' });"></div>
 
-        <div>
-          <a href="https://drive.google.com/file/d/1-htVgnqDK8FeUJH1MuXIMRhHVtlNsZP7/view?usp=sharing" class="btn-box">View Resume</a>
-        </div>
-        <!-- <div>
+
+
+      <div>
+        <a href="https://drive.google.com/file/d/1-htVgnqDK8FeUJH1MuXIMRhHVtlNsZP7/view?usp=sharing"
+          class="btn-box">View Resume</a>
+      </div>
+      <!-- <div>
           <a href="#about" class="btn-box">About Me</a>
           </div> -->
-        </div>
+    </div>
 
-        <div class="img-container" data-aos="zoom-in">
-          <img src="me3.png" alt="" class="me-img" />
-        </div>
-      </section>
+    <div class="img-container" data-aos="zoom-in">
+      <img src="me3.png" alt="" class="me-img" />
+    </div>
+  </section>
 
-      <section class="about" id="about" style="margin-top: 2rem;" >
-      <!-- <div class="about-img" data-aos="fade-right">
+  <section class="about" id="about" style="margin-top: 2rem;">
+    <!-- <div class="about-img" data-aos="fade-right">
         <img src="image3.png" alt="" />
       </div> -->
-      <div class="vid-container" data-aos="fade-right">
-        <video loop autoplay muted play-inline src="144259-784302971_medium.mp4" type="video/mp4"></video>
-      </div>
+    <div class="vid-container" data-aos="fade-right">
+      <video loop autoplay muted play-inline src="144259-784302971_medium.mp4" type="video/mp4"></video>
+    </div>
 
-      <div class="about-text" data-aos="fade-left">
-        <h2 id="about">About <span class="gradient">Me</span></h2>
-        <h4>Full Stack Developer</h4>
-        <!-- <p>
-          Hey there! I’m Komal Meena, and I’m all about turning ideas into
-          awesome web experiences. Right now, I’m diving into HTML, CSS,
-          JavaScript and React and loving every minute of it. I’m the kind of
+    <div class="about-text" data-aos="fade-left">
+      <h2 id="about">About <span class="gradient">Me</span></h2>
+      <h4>Full Stack Developer</h4>
+      <!-- <p>
+          Hey there! I'm Komal Meena, and I'm all about turning ideas into
+          awesome web experiences. Right now, I'm diving into HTML, CSS,
+          JavaScript and React and loving every minute of it. I'm the kind of
           person who gets excited about new tech and enjoys figuring out how
           things work.
         </p>
         <p>
-          When I’m not coding, you might find me painting,sketching, or enjoying
-          a good cup of coffee. I’m always up for a challenge and eager to learn
-          new things. Let’s connect and see what cool projects we can work on
+          When I'm not coding, you might find me painting,sketching, or enjoying
+          a good cup of coffee. I'm always up for a challenge and eager to learn
+          new things. Let's connect and see what cool projects we can work on
           together! 🚀
         </p> -->
-       
 
-          <p>
-          Whether it’s crafting sleek UIs or integrating real-time features with WebSockets, I love turning ideas into pixel-perfect web experiences ✨.
-        </p>
 
-        <p>
-          I’ve solved <span class="highlight">700+ algorithmic</span>  problems across <span class="highlight">LeetCode, Coding Ninjas and GFG</span>  🧩, and I’m passionate about building scalable systems and intuitive designs 🏗️.
-        </p>
+      <p>
+        Whether it's crafting sleek UIs or integrating real-time features with WebSockets, I love turning ideas into
+        pixel-perfect web experiences ✨.
+      </p>
 
-        <ul style="font-size: 1rem;list-style: none;">
-          
-          <li>🏆 <span class="highlight"> Hackathon enthusiast</span> — built an assistive app for the visually impaired at the Morgan Stanley Hackathon 👁️‍🗨️.</li>
-          <li>🗣️ <span class="highlight">Debater</span>  — active in my university’s debating society, sharpening communication and critical thinking.</li>
-          <li>🎨<span class="highlight">
-            Artist at heart 
+      <p>
+        I've solved <span class="highlight">700+ algorithmic</span> problems across <span class="highlight">LeetCode,
+          Coding Ninjas and GFG</span> 🧩, and I'm passionate about building scalable systems and intuitive designs 🏗️.
+      </p>
+
+      <ul style="font-size: 1rem;list-style: none;">
+
+        <li>🏆 <span class="highlight"> Hackathon enthusiast</span> — built an assistive app for the visually impaired
+          at the Morgan Stanley Hackathon 👁️‍🗨️.</li>
+        <li>🗣️ <span class="highlight">Debater</span> — active in my university's debating society, sharpening
+          communication and critical thinking.</li>
+        <li>🎨<span class="highlight">
+            Artist at heart
           </span> — I enjoy sketching, painting, and adding creative flair to frontend projects.</li>
-          <li>☕ Coffee, VS Code, and lo-fi beats 🎧 = my productivity vibe.</li>
-          <li>🌟 Dreaming big — aiming to build impactful products and join a top MAANG company 💼.</li>
-        </ul>
+        <li>☕ Coffee, VS Code, and lo-fi beats 🎧 = my productivity vibe.</li>
+        <li>🌟 Dreaming big — aiming to build impactful products and join a top MAANG company 💼.</li>
+      </ul>
 
-        <p>
-          I’m a quick learner, team player 🤝, and always excited to collaborate and grow 📈. Let’s connect and create something amazing! 💬
-        </p>
+      <p>
+        I'm a quick learner, team player 🤝, and always excited to collaborate and grow 📈. Let's connect and create
+        something amazing! 💬
+      </p>
 
 
-        <!-- <a href="#projects" class="btn-box" id="btn-2">My Projects</a> -->
-      </div>
-    </section>
+      <!-- <a href="#projects" class="btn-box" id="btn-2">My Projects</a> -->
+    </div>
+  </section>
 
-    <!-- <section id="highlights" class="highlights-section">
+  <!-- <section id="highlights" class="highlights-section">
       <h2 class="section-title">Stats & <span class="gradient">Highlights</span></h2>
       <div class="stats-grid">
         
@@ -185,39 +183,39 @@
     
       </div>
     </section> -->
-    <section id="highlights" class="highlights-section">
-      <h2 class="section-title">Stats & <span class="gradient">Highlights</span></h2>
-      <div class="stats-grid">
-        
-        <div class="stat-card">
-          <!-- <div class="stat-icon"><i class="fas fa-puzzle-piece"></i></div> -->
-          <h3 class="stat-number" data-target="700">0</h3>
-          <p class="stat-label">DSA Problems Solved</p>
-        </div>
-    
-        <div class="stat-card">
-          <!-- <div class="stat-icon"><i class="fab fa-github"></i></div> -->
-          <h3 class="stat-number" data-target="500">0</h3>
-          <p class="stat-label">GitHub Contributions</p>
-        </div>
-    
-        <!-- <div class="stat-card">
+  <section id="highlights" class="highlights-section">
+    <h2 class="section-title">Stats & <span class="gradient">Highlights</span></h2>
+    <div class="stats-grid">
+
+      <div class="stat-card">
+        <!-- <div class="stat-icon"><i class="fas fa-puzzle-piece"></i></div> -->
+        <h3 class="stat-number" data-target="700">0</h3>
+        <p class="stat-label">DSA Problems Solved</p>
+      </div>
+
+      <div class="stat-card">
+        <!-- <div class="stat-icon"><i class="fab fa-github"></i></div> -->
+        <h3 class="stat-number" data-target="500">0</h3>
+        <p class="stat-label">GitHub Contributions</p>
+      </div>
+
+      <!-- <div class="stat-card">
           <div class="stat-icon"><i class="fas fa-trophy"></i></div>
           <h3 class="stat-number" data-target="6">0</h3>
           <p class="stat-label">Hackathons Attended</p>
         </div> -->
-    
-        <div class="stat-card">
-          <!-- <div class="stat-icon"><i class="fas fa-star"></i></div> -->
-          <h3 class="stat-number" data-target="15">0</h3>
-          <p class="stat-label">Projects</p>
-        </div>
-    
-      </div>
-    </section>
-    
 
-    <!-- <section>
+      <div class="stat-card">
+        <!-- <div class="stat-icon"><i class="fas fa-star"></i></div> -->
+        <h3 class="stat-number" data-target="15">0</h3>
+        <p class="stat-label">Projects</p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- <section>
       <div class="services">
         <div class="container">
           <h1 class="sub-title">My <span>Services</span></h1>
@@ -257,1033 +255,948 @@
     </section> -->
 
 
-    <!--tech stack-->
-    <section class="skills" id="techstack"  style="margin-top: 3rem;">
-      <div  class="heading-skills">
-       <h5>
-         Tech<span class="gradient">Stack</span>
-       </h5> 
-      </div>
+  <!--tech stack-->
+  <section class="skills" id="techstack" style="margin-top: 3rem;">
+    <div class="heading-skills">
+      <h5>
+        Tech<span class="gradient">Stack</span>
+      </h5>
+    </div>
 
-      <div class="container-skills">
-        <!-- <div class="content-skills">
+    <div class="container-skills">
+      <!-- <div class="content-skills">
           <div class="skill-icon">
             <i class="bx bx-code-alt" style="color: #fd94f9"></i>
           </div>
           <div class="skill-name">DSA</div>
         </div> -->
 
-        <div class="content-skills" data-aos="zoom-in">
-          <div class="skill-icon">
-            <i class="bx bxl-html5" style="color: #fc1212"></i>
-          </div>
-          <div class="skill-name">HTML</div>
-          <!-- <div class="skill-content">
+      <div class="content-skills" data-aos="zoom-in">
+        <div class="skill-icon">
+          <i class="bx bxl-html5" style="color: #fc1212"></i>
+        </div>
+        <div class="skill-name">HTML</div>
+        <!-- <div class="skill-content">
             Skilled in creating well-structured and semantic HTML for building
             responsive web pages. Comfortable with HTML5 features and
             accessibility best practices to enhance content and functionality.
           </div> -->
-        </div>
+      </div>
 
-        <div class="content-skills" data-aos="zoom-in">
-          <div class="skill-icon">
-            <i class="bx bxl-css3" style="color: #f9ec31"></i>
-          </div>
-          <div class="skill-name">CSS</div>
-          <!-- <div class="skill-content">
+      <div class="content-skills" data-aos="zoom-in">
+        <div class="skill-icon">
+          <i class="bx bxl-css3" style="color: #f9ec31"></i>
+        </div>
+        <div class="skill-name">CSS</div>
+        <!-- <div class="skill-content">
             Proficient in styling web pages using CSS, including layouts,
             animations, and responsive design. Experienced with modern CSS
             techniques and preprocessors like SASS for efficient design
             implementation.
           </div> -->
-        </div>
+      </div>
 
-        <div class="content-skills" data-aos="zoom-in">
-          <div class="skill-icon">
-            <i class="bx bxl-bootstrap" style="color: rgb(168, 137, 254)"></i>
-          </div>
-          <div class="skill-name">BOOTSTRAP</div>
-          <!-- <div class="skill-content">
+      <div class="content-skills" data-aos="zoom-in">
+        <div class="skill-icon">
+          <i class="bx bxl-bootstrap" style="color: rgb(168, 137, 254)"></i>
+        </div>
+        <div class="skill-name">BOOTSTRAP</div>
+        <!-- <div class="skill-content">
             Familiar with using Bootstrap to quickly create responsive and
-            visually appealing web designs. Experienced in applying Bootstrap’s
+            visually appealing web designs. Experienced in applying Bootstrap's
             grid system and components to streamline layout and styling.
           </div> -->
-        </div>
+      </div>
 
-        <div class="content-skills" data-aos="zoom-in">
-          <div class="skill-icon">
-            <i class="bx bxl-tailwind-css" style="color: rgb(5, 122, 248)"></i>
-          </div>
-          <div class="skill-name">TAILWIND CSS</div>
-          <!-- <div class="skill-content">
+      <div class="content-skills" data-aos="zoom-in">
+        <div class="skill-icon">
+          <i class="bx bxl-tailwind-css" style="color: rgb(5, 122, 248)"></i>
+        </div>
+        <div class="skill-name">TAILWIND CSS</div>
+        <!-- <div class="skill-content">
             Familiar with using Bootstrap to quickly create responsive and
-            visually appealing web designs. Experienced in applying Bootstrap’s
+            visually appealing web designs. Experienced in applying Bootstrap's
             grid system and components to streamline layout and styling.
           </div> -->
-        </div>
+      </div>
 
-        <div class="content-skills" data-aos="zoom-in">
-          <div class="skill-icon">
-            <i class="bx bxl-java" style="color: #4cf932"></i>
-          </div>
-          <div class="skill-name">JAVASCRIPT</div>
-          <!-- <div class="skill-content">
+      <div class="content-skills" data-aos="zoom-in">
+        <div class="skill-icon">
+          <i class="bx bxl-java" style="color: #4cf932"></i>
+        </div>
+        <div class="skill-name">JAVASCRIPT</div>
+        <!-- <div class="skill-content">
             Competent in writing JavaScript to create dynamic, interactive web
             applications. Familiar with common libraries to enhance client-side
             scripting and functionality.
           </div> -->
-        </div>
+      </div>
 
-        <div class="content-skills" data-aos="zoom-in">
-          <div class="skill-icon">
-            <i class="bx bxl-react" style="color: #32dbf9"></i>
-          </div>
-          <div class="skill-name">REACT</div>
-          <!-- <div class="skill-content">
+      <div class="content-skills" data-aos="zoom-in">
+        <div class="skill-icon">
+          <i class="bx bxl-react" style="color: #32dbf9"></i>
+        </div>
+        <div class="skill-name">REACT</div>
+        <!-- <div class="skill-content">
             Learning React to build dynamic user interfaces with reusable
             components. Familiar with basic concepts like components and state
             to start creating interactive web applications.
           </div> -->
+      </div>
+
+
+
+      <div class="content-skills" data-aos="zoom-in">
+        <div class="skill-icon">
+          <i class="bx bxl-nodejs" style="color: #68A063"></i>
+        </div>
+        <div class="skill-name">NODE.JS</div>
+      </div>
+
+      <div class="content-skills" data-aos="zoom-in">
+        <div class="skill-icon">
+          <i class="bx bx-code-block" style="color: #fd6f40"></i>
+        </div>
+        <div class="skill-name">EXPRESS</div>
+      </div>
+
+
+      <div class="content-skills" data-aos="zoom-in">
+        <div class="skill-icon">
+          <i class="bx bxl-mongodb" style="color: #4DB33D"></i>
+        </div>
+        <div class="skill-name">MONGODB</div>
+      </div>
+
+      <div class="content-skills" data-aos="zoom-in">
+        <div class="skill-icon">
+          <i class="bx bx-data" style="color: #1d17c9"></i>
+        </div>
+        <div class="skill-name">MONGOOSE</div>
+      </div>
+
+  </section>
+
+
+
+
+  <!-- Skills Section -->
+  <section class="skills" id="skills" style="margin-top: 3rem;">
+    <div class="skills-content">
+      <h1 class="heading">My <span class="gradient">Skills</span></h1>
+
+      <div class="skills-container" data-aos="fade-up">
+        <!-- Technical Skills -->
+        <div class="skill-box">
+          <h3>Frontend</h3>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Tailwind CSS</li>
+            <li>Bootstrap</li>
+            <li>JavaScript</li>
+            <li>React.js, Redux</li>
+            <li>Framer Motion</li>
+          </ul>
         </div>
 
-     
+        <div class="skill-box">
+          <h3>Backend & Tools</h3>
+          <ul>
+            <li>Node.js</li>
+            <li>Express.js</li>
+            <li>MongoDB</li>
+            <li>Git, GitHub, Postman</li>
+            <li>VS Code, Figma</li>
+          </ul>
+        </div>
 
-            <div class="content-skills" data-aos="zoom-in">
-              <div class="skill-icon">
-                <i class="bx bxl-nodejs" style="color: #68A063"></i>
-              </div>
-              <div class="skill-name">NODE.JS</div>
-              </div>
+        <div class="skill-box">
+          <h3>CS Fundamentals</h3>
+          <ul>
+            <li>Data Structures & Algorithms</li>
+            <li>DBMS</li>
+            <li>OOP</li>
+            <li>OS</li>
+            <li>SQL</li>
+          </ul>
+        </div>
 
-            <div class="content-skills" data-aos="zoom-in">
-              <div class="skill-icon">
-                <i class="bx bx-code-block" style="color: #fd6f40"></i>
-              </div>
-              <div class="skill-name">EXPRESS</div>
-              </div>
-
-
-               <div class="content-skills" data-aos="zoom-in">
-              <div class="skill-icon">
-                <i class="bx bxl-mongodb" style="color: #4DB33D"></i>
-              </div>
-              <div class="skill-name">MONGODB</div>
-              </div>
-
-            <div class="content-skills" data-aos="zoom-in">
-              <div class="skill-icon">
-                <i class="bx bx-data" style="color: #1d17c9"></i>
-              </div>
-              <div class="skill-name">MONGOOSE</div>
-              </div>
-
-    </section>
-
-    
-
-
-    <!-- Skills Section -->
-    <section class="skills" id="skills" style="margin-top: 3rem;">
-      <div class="skills-content">
-        <h1 class="heading">My <span class="gradient">Skills</span></h1>
-
-        <div class="skills-container" data-aos="fade-up">
-          <!-- Technical Skills -->
-          <div class="skill-box">
-            <h3>Frontend</h3>
-            <ul>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>Tailwind CSS</li>
-              <li>Bootstrap</li>
-              <li>JavaScript</li>
-              <li>React.js, Redux</li>
-              <li>Framer Motion</li>
-            </ul>
-          </div>
-
-          <div class="skill-box">
-            <h3>Backend & Tools</h3>
-            <ul>
-              <li>Node.js</li>
-              <li>Express.js</li>
-              <li>MongoDB</li>
-              <li>Git, GitHub, Postman</li>
-              <li>VS Code, Figma</li>
-            </ul>
-          </div>
-
-          <div class="skill-box">
-            <h3>CS Fundamentals</h3>
-            <ul>
-              <li>Data Structures & Algorithms</li>
-              <li>DBMS</li>
-              <li>OOP</li>
-              <li>OS</li>
-              <li>SQL</li>
-            </ul>
-          </div>
-
-          <!-- Coding Profiles -->
-          <div class="skill-box coding">
-            <h3>Coding Profiles</h3>
-            <div style="display: flex;  flex-direction: column; gap: 1rem">
-              <div class="profiles" style="display: flex;gap: 1rem;justify-content: flex-start;">
+        <!-- Coding Profiles -->
+        <div class="skill-box coding">
+          <h3>Coding Profiles</h3>
+          <div style="display: flex;  flex-direction: column; gap: 1rem">
+            <div class="profiles" style="display: flex;gap: 1rem;justify-content: flex-start;">
 
               <svg xmlns="http://www.w3.org/2000/svg" style="height: 1.5rem;" viewBox="0 0 24 24" id="leetcode">
-              <path fill="#B3B1B0" d="M22 14.355c0-.742-.564-1.346-1.26-1.346H10.676c-.696 0-1.26.604-1.26 1.346s.563 1.346 1.26 1.346H20.74c.696.001 1.26-.603 1.26-1.346z"></path>
-              <path fill="#E7A41F" d="m3.482 18.187 4.313 4.361c.973.979 2.318 1.452 3.803 1.452 1.485 0 2.83-.512 3.805-1.494l2.588-2.637c.51-.514.492-1.365-.039-1.9-.531-.535-1.375-.553-1.884-.039l-2.676 2.607c-.462.467-1.102.662-1.809.662s-1.346-.195-1.81-.662l-4.298-4.363c-.463-.467-.696-1.15-.696-1.863 0-.713.233-1.357.696-1.824l4.285-4.38c.463-.467 1.116-.645 1.822-.645s1.346.195 1.809.662l2.676 2.606c.51.515 1.354.497 1.885-.038.531-.536.549-1.387.039-1.901l-2.588-2.636a4.994 4.994 0 0 0-2.392-1.33l-.034-.007 2.447-2.503c.512-.514.494-1.366-.037-1.901-.531-.535-1.376-.552-1.887-.038l-10.018 10.1C2.509 11.458 2 12.813 2 14.311c0 1.498.509 2.896 1.482 3.876z"></path>
-              <path fill="#070706" d="M8.115 22.814a2.109 2.109 0 0 1-.474-.361c-1.327-1.333-2.66-2.66-3.984-3.997-1.989-2.008-2.302-4.937-.786-7.32a6 6 0 0 1 .839-1.004L13.333.489c.625-.626 1.498-.652 2.079-.067.56.563.527 1.455-.078 2.066-.769.776-1.539 1.55-2.309 2.325-.041.122-.14.2-.225.287-.863.876-1.75 1.729-2.601 2.618-.111.116-.262.186-.372.305-1.423 1.423-2.863 2.83-4.266 4.272-1.135 1.167-1.097 2.938.068 4.127 1.308 1.336 2.639 2.65 3.961 3.974.067.067.136.132.204.198.468.303.474 1.25.183 1.671-.321.465-.74.75-1.333.728-.199-.006-.363-.086-.529-.179z"></path>
+                <path fill="#B3B1B0"
+                  d="M22 14.355c0-.742-.564-1.346-1.26-1.346H10.676c-.696 0-1.26.604-1.26 1.346s.563 1.346 1.26 1.346H20.74c.696.001 1.26-.603 1.26-1.346z">
+                </path>
+                <path fill="#E7A41F"
+                  d="m3.482 18.187 4.313 4.361c.973.979 2.318 1.452 3.803 1.452 1.485 0 2.83-.512 3.805-1.494l2.588-2.637c.51-.514.492-1.365-.039-1.9-.531-.535-1.375-.553-1.884-.039l-2.676 2.607c-.462.467-1.102.662-1.809.662s-1.346-.195-1.81-.662l-4.298-4.363c-.463-.467-.696-1.15-.696-1.863 0-.713.233-1.357.696-1.824l4.285-4.38c.463-.467 1.116-.645 1.822-.645s1.346.195 1.809.662l2.676 2.606c.51.515 1.354.497 1.885-.038.531-.536.549-1.387.039-1.901l-2.588-2.636a4.994 4.994 0 0 0-2.392-1.33l-.034-.007 2.447-2.503c.512-.514.494-1.366-.037-1.901-.531-.535-1.376-.552-1.887-.038l-10.018 10.1C2.509 11.458 2 12.813 2 14.311c0 1.498.509 2.896 1.482 3.876z">
+                </path>
+                <path fill="#070706"
+                  d="M8.115 22.814a2.109 2.109 0 0 1-.474-.361c-1.327-1.333-2.66-2.66-3.984-3.997-1.989-2.008-2.302-4.937-.786-7.32a6 6 0 0 1 .839-1.004L13.333.489c.625-.626 1.498-.652 2.079-.067.56.563.527 1.455-.078 2.066-.769.776-1.539 1.55-2.309 2.325-.041.122-.14.2-.225.287-.863.876-1.75 1.729-2.601 2.618-.111.116-.262.186-.372.305-1.423 1.423-2.863 2.83-4.266 4.272-1.135 1.167-1.097 2.938.068 4.127 1.308 1.336 2.639 2.65 3.961 3.974.067.067.136.132.204.198.468.303.474 1.25.183 1.671-.321.465-.74.75-1.333.728-.199-.006-.363-.086-.529-.179z">
+                </path>
               </svg>
               <a class="profiles" href="https://leetcode.com/u/komalmeena2203/" target="_blank">LeetCode</a>
-                  </div>
+            </div>
 
-              <div class="profiles" style="display: flex;gap: 1rem;justify-content: flex-start;">
-                <svg style="height: 1.5rem;" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 48 48">
-                <path fill="#43a047" d="M29.035,24C29.014,23.671,29,23.339,29,23c0-6.08,2.86-10,7-10c3.411,0,6.33,2.662,7,7l2,0l0.001-9	L43,11c0,0-0.533,1.506-1,1.16c-1.899-1.066-3.723-1.132-6.024-1.132C30.176,11.028,25,16.26,25,22.92	c0,0.364,0.021,0.723,0.049,1.08h-2.099C22.979,23.643,23,23.284,23,22.92c0-6.66-5.176-11.892-10.976-11.892	c-2.301,0-4.125,0.065-6.024,1.132C5.533,12.506,5,11,5,11l-2.001,0L3,20l2,0c0.67-4.338,3.589-7,7-7c4.14,0,7,3.92,7,10	c0,0.339-0.014,0.671-0.035,1H0v2h1.009c1.083,0,1.977,0.861,1.999,1.943C3.046,29.789,3.224,32.006,4,33c1.269,1.625,3,3,8,3	c5.022,0,9.92-4.527,11-10h2c1.08,5.473,5.978,10,11,10c5,0,6.731-1.375,8-3c0.776-0.994,0.954-3.211,0.992-5.057	C45.014,26.861,45.909,26,46.991,26H48v-2H29.035z M11.477,33.73C9.872,33.73,7.322,33.724,7,32	c-0.109-0.583-0.091-2.527-0.057-4.046C6.968,26.867,7.855,26,8.943,26H19C18.206,30.781,15.015,33.73,11.477,33.73z M41,32	c-0.322,1.724-2.872,1.73-4.477,1.73c-3.537,0-6.729-2.949-7.523-7.73h10.057c1.088,0,1.975,0.867,2,1.954	C41.091,29.473,41.109,31.417,41,32z"></path>
-                      </svg>
-                  <a class="profiles" href="https://www.geeksforgeeks.org/user/faaltuk1bi3/" target="_blank">GeeksforGeeks</a>
-                  </div>
+            <div class="profiles" style="display: flex;gap: 1rem;justify-content: flex-start;">
+              <svg style="height: 1.5rem;" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 48 48">
+                <path fill="#43a047"
+                  d="M29.035,24C29.014,23.671,29,23.339,29,23c0-6.08,2.86-10,7-10c3.411,0,6.33,2.662,7,7l2,0l0.001-9	L43,11c0,0-0.533,1.506-1,1.16c-1.899-1.066-3.723-1.132-6.024-1.132C30.176,11.028,25,16.26,25,22.92	c0,0.364,0.021,0.723,0.049,1.08h-2.099C22.979,23.643,23,23.284,23,22.92c0-6.66-5.176-11.892-10.976-11.892	c-2.301,0-4.125,0.065-6.024,1.132C5.533,12.506,5,11,5,11l-2.001,0L3,20l2,0c0.67-4.338,3.589-7,7-7c4.14,0,7,3.92,7,10	c0,0.339-0.014,0.671-0.035,1H0v2h1.009c1.083,0,1.977,0.861,1.999,1.943C3.046,29.789,3.224,32.006,4,33c1.269,1.625,3,3,8,3	c5.022,0,9.92-4.527,11-10h2c1.08,5.473,5.978,10,11,10c5,0,6.731-1.375,8-3c0.776-0.994,0.954-3.211,0.992-5.057	C45.014,26.861,45.909,26,46.991,26H48v-2H29.035z M11.477,33.73C9.872,33.73,7.322,33.724,7,32	c-0.109-0.583-0.091-2.527-0.057-4.046C6.968,26.867,7.855,26,8.943,26H19C18.206,30.781,15.015,33.73,11.477,33.73z M41,32	c-0.322,1.724-2.872,1.73-4.477,1.73c-3.537,0-6.729-2.949-7.523-7.73h10.057c1.088,0,1.975,0.867,2,1.954	C41.091,29.473,41.109,31.417,41,32z">
+                </path>
+              </svg>
+              <a class="profiles" href="https://www.geeksforgeeks.org/user/faaltuk1bi3/"
+                target="_blank">GeeksforGeeks</a>
+            </div>
 
-                  <div class="profiles" style="display: flex;gap: 1rem;justify-content: flex-start;">
-                  <img width="28px" height="28px" src="https://img.icons8.com/color/48/ninja-head.png" alt="ninja-head"/>
-                    <a class="profiles" href="https://www.naukri.com/code360/profile/KomalMeena" target="_blank">Coding Ninjas</a>
-                  </div>
+            <div class="profiles" style="display: flex;gap: 1rem;justify-content: flex-start;">
+              <img width="28px" height="28px" src="https://img.icons8.com/color/48/ninja-head.png" alt="ninja-head" />
+              <a class="profiles" href="https://www.naukri.com/code360/profile/KomalMeena" target="_blank">Coding
+                Ninjas</a>
+            </div>
 
-                  <!-- <div style="display: flex;gap: 1rem;justify-content: flex-start;">
+            <!-- <div style="display: flex;gap: 1rem;justify-content: flex-start;">
                   <img width="30px" height="30px" src="https://img.icons8.com/color/48/ninja-head.png" alt="ninja-head"/>
                     <a class="profiles" href="https://auth.geeksforgeeks.org/user/yourUsername/" target="_blank">Code Forces</a>
                   </div> -->
 
-            </div>
-              
-                
-            
           </div>
+
+
+
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
 
 
-    <!--projects-->
-    <section style="margin-top:5rem ;">
-      <div class="project">
-        <div class="main-text">
-          <h2 id="projects">Latest <span class="gradient">Projects</span></h2>
-          <div class="project-content" data-aos="fade-up">
-            <div class="row">
-              <img style="height: 50%;" src="hostelhub.png" alt="" />
-              <div class="layer" style="height: 50%;">
+  <!--projects-->
+  <section style="margin-top:5rem ;">
+    <div class="project">
+      <div class="main-text">
+        <h2 id="projects">Latest <span class="gradient">Projects</span></h2>
+        <div class="project-content" data-aos="fade-up">
+          <div class="row">
+            <img style="height: 50%;" src="hostelhub.png" alt="" />
+            <div class="layer" style="height: 50%;">
               <div class="project-box">
                 <div>
                   <h5>HostelHub</h5>
                   <p>
-                    HostelHub centralizes secure mess ratings with image uploads, anonymous feedback, and a streamlined lost‑and‑found portal to boost transparency and student support.
+                    HostelHub centralizes secure mess ratings with image uploads, anonymous feedback, and a streamlined
+                    lost‑and‑found portal to boost transparency and student support.
                   </p>
                 </div>
-              <div class="project-links">
-                <a
-                href="https://hostelhub-frontend.onrender.com"  
-                class="aClass"
-              >
-                <span id="tag">Live Project</span
-                ><i class="bx bx-link" style="color: #d686fc"></i>
-              </a>
-              <a
-                href="https://github.com/komal2203/hostelhub"
-                class="aClass"
-                ><span id="tag">GitHub Code</span
-                ><i class="bx bx-link" style="color: #eb7bf5"></i
-              ></a>
-              </div>
-              
-              </div>
-             
-              </div>
-            </div>
+                <div class="project-links">
+                  <a href="https://hostelhub-frontend.onrender.com" class="aClass">
+                    <span id="tag">Live Project</span><i class="bx bx-link" style="color: #d686fc"></i>
+                  </a>
+                  <a href="https://github.com/komal2203/hostelhub" class="aClass"><span id="tag">GitHub Code</span><i
+                      class="bx bx-link" style="color: #eb7bf5"></i></a>
+                </div>
 
-            <div class="row">
-              <img style="height: 50%;" src="codegenai.png" alt="" />
-              <div class="layer" style="height: 50%;">
+              </div>
+
+            </div>
+          </div>
+
+          <div class="row">
+            <img style="height: 50%;" src="codegenai.png" alt="" />
+            <div class="layer" style="height: 50%;">
               <div class="project-box">
                 <div>
                   <h5>UNSPSC CodeGenAI</h5>
                   <p>
-                    Hybrid rule‑based and GPT semantic pipeline mapping invoices to UNSPSC codes, with a Flask UI for manual review of low‑confidence items.
+                    Hybrid rule‑based and GPT semantic pipeline mapping invoices to UNSPSC codes, with a Flask UI for
+                    manual review of low‑confidence items.
                   </p>
                 </div>
-              <div class="project-links">
-                <a
-                href="https://mckinseydtu-1df9110d4e6a.herokuapp.com/"  
-                class="aClass"
-              >
-                <span id="tag">Live Project</span
-                ><i class="bx bx-link" style="color: #d686fc"></i>
-              </a>
-              <a
-                href="https://github.com/komal2203/acme-spend-categorization"
-                class="aClass"
-                ><span id="tag">GitHub Code</span
-                ><i class="bx bx-link" style="color: #eb7bf5"></i
-              ></a>
+                <div class="project-links">
+                  <a href="https://mckinseydtu-1df9110d4e6a.herokuapp.com/" class="aClass">
+                    <span id="tag">Live Project</span><i class="bx bx-link" style="color: #d686fc"></i>
+                  </a>
+                  <a href="https://github.com/komal2203/acme-spend-categorization" class="aClass"><span id="tag">GitHub
+                      Code</span><i class="bx bx-link" style="color: #eb7bf5"></i></a>
+                </div>
+
               </div>
-              
-              </div>
-             
-              </div>
+
             </div>
-              <div class="row">
-                <img src="beyondsight.png" style="height: 50%;" alt="" />
-              <div class="layer" style="height: 50%;">
-                <div class="project-box">
-                  <div>
-                    <h5>Beyond Sight</h5>
-                    <p>
-                      Co-built Beyondsight, a React-based assistive web app with voice navigation for an NGO, developed at the Morgan Stanley Hackathon.
-                      </p>
-                  </div>
-              <div class="project-links">
-                <a
-                  href="https://beyondsight.vercel.app/"
-                  class="aClass"
-                >
-                  <span id="tag">Live Project</span
-                  ><i class="bx bx-link" style="color: #d686fc"></i>
-                </a>
-                <a
-                  href="https://github.com/abhishek-403/code-to-give-frontend" class="aClass"
-                  ><span id="tag">GitHub Code</span
-                  ><i class="bx bx-link" style="color: #eb7bf5"></i
-                ></a>
-              </div>
+          </div>
+          <div class="row">
+            <img src="beyondsight.png" style="height: 50%;" alt="" />
+            <div class="layer" style="height: 50%;">
+              <div class="project-box">
+                <div>
+                  <h5>Beyond Sight</h5>
+                  <p>
+                    Co-built Beyondsight, a React-based assistive web app with voice navigation for an NGO, developed at
+                    the Morgan Stanley Hackathon.
+                  </p>
+                </div>
+                <div class="project-links">
+                  <a href="https://beyondsight.vercel.app/" class="aClass">
+                    <span id="tag">Live Project</span><i class="bx bx-link" style="color: #d686fc"></i>
+                  </a>
+                  <a href="https://github.com/abhishek-403/code-to-give-frontend" class="aClass"><span id="tag">GitHub
+                      Code</span><i class="bx bx-link" style="color: #eb7bf5"></i></a>
                 </div>
               </div>
             </div>
+          </div>
 
-              <div class="row">
-              <img style="height: 50%;" src="chattypals.png" alt="" />
-              <div class="layer" style="height: 50%;">
+          <div class="row">
+            <img style="height: 50%;" src="chattypals.png" alt="" />
+            <div class="layer" style="height: 50%;">
               <div class="project-box">
                 <div>
                   <h5>Chattypals</h5>
                   <p>
-                    Built a MERN-based real-time chat app using WebSockets, JWT auth, and a responsive UI for smooth messaging with live status and typing indicators.
+                    Built a MERN-based real-time chat app using WebSockets, JWT auth, and a responsive UI for smooth
+                    messaging with live status and typing indicators.
                   </p>
                 </div>
-              <div class="project-links">
-                <a
-                href="https://chattypals.netlify.app/"  
-                class="aClass"
-              >
-                <span id="tag">Live Project</span
-                ><i class="bx bx-link" style="color: #d686fc"></i>
-              </a>
-              <a
-                href="https://github.com/komal2203/mern-chat"
-                class="aClass"
-                ><span id="tag">GitHub Code</span
-                ><i class="bx bx-link" style="color: #eb7bf5"></i
-              ></a>
-              </div>
-              
-              </div>
-             
-              </div>
-            </div>
+                <div class="project-links">
+                  <a href="https://chattypals.netlify.app/" class="aClass">
+                    <span id="tag">Live Project</span><i class="bx bx-link" style="color: #d686fc"></i>
+                  </a>
+                  <a href="https://github.com/komal2203/mern-chat" class="aClass"><span id="tag">GitHub Code</span><i
+                      class="bx bx-link" style="color: #eb7bf5"></i></a>
+                </div>
 
-              <div class="row">
-              <img src="pixora.png" style="height: 50%;" alt="" />
-              <div class="layer" style="height: 50%;">
+              </div>
+
+            </div>
+          </div>
+
+          <div class="row">
+            <img src="pixora.png" style="height: 50%;" alt="" />
+            <div class="layer" style="height: 50%;">
               <div class="project-box">
                 <div>
-                
+
                   <h5>Pixora</h5>
                   <p>
-                    Built a full-stack image gallery with React and Express featuring secure uploads, real-time previews and responsive layouts.
+                    Built a full-stack image gallery with React and Express featuring secure uploads, real-time previews
+                    and responsive layouts.
 
                   </p>
                 </div>
-                
+
                 <div class="project-links">
-                  <a
-                    href="https://pixora-frontend.onrender.com/"
-                    class="aClass"
-                  >
-                    <span id="tag">Live Project</span
-                    ><i class="bx bx-link" style="color: #d686fc"></i>
+                  <a href="https://pixora-frontend.onrender.com/" class="aClass">
+                    <span id="tag">Live Project</span><i class="bx bx-link" style="color: #d686fc"></i>
                   </a>
-                  <a
-                    href="https://github.com/komal2203/Pixora"
-                    class="aClass"
-                    ><span id="tag">GitHub Code</span
-              <div class="project-box">
-                    <i class="bx bx-link" style="color: #eb7bf5;"></i
-                  ></a>
+                  <a href="https://github.com/komal2203/Pixora" class="aClass"><span id="tag">GitHub Code</span <div
+                      class="project-box">
+                    <i class="bx bx-link" style="color: #eb7bf5;"></i></a>
                 </div>
-              </div>                
               </div>
             </div>
+          </div>
 
-            <div class="row">
-              <img style="height: 50%;" src="musico.png" alt="" />
-              <div class="layer" style="height: 50%;">
+          <div class="row">
+            <img style="height: 50%;" src="musico.png" alt="" />
+            <div class="layer" style="height: 50%;">
               <div class="project-box">
                 <div>
                   <h5>Musico</h5>
                   <p>
-                    A responsive and dynamic music app built with React and Tailwind CSS, featuring play, pause, song navigation, and a sleek modern UI for seamless user experience.
+                    A responsive and dynamic music app built with React and Tailwind CSS, featuring play, pause, song
+                    navigation, and a sleek modern UI for seamless user experience.
                   </p>
                 </div>
-              <div class="project-links">
-                <a
-                href="https://musicobyme.netlify.app/"  
-                class="aClass"
-              >
-                <span id="tag">Live Project</span
-                ><i class="bx bx-link" style="color: #d686fc"></i>
-              </a>
-              <a
-                href="https://github.com/komal2203/Musico"
-                class="aClass"
-                ><span id="tag">GitHub Code</span
-                ><i class="bx bx-link" style="color: #eb7bf5"></i
-              ></a>
-              </div>
-              
-              </div>
-             
-              </div>
-            </div>
-
-
-            <div class="row">
-              <img src="calculatorr.png" alt="" style="height: 50%;"/>
-              <div class="layer" style="height: 50%;">
-                <div class="project-box">
-                  <div>
-
-                    <h5>Calculator</h5>
-                    <p>
-                      Developed a responsive calculator application using React with
-                      real-time input handling and dynamic display updates with 4
-                      basic arithmetic operations.
-                    </p>
-                  </div>
-  
-                  <div class="project-links">
-  
-                    <a
-                      href="https://komal2203.github.io/4-calculator-version-2/"
-                      class="aClass"
-                    >
-                      <span id="tag">Live Project</span
-                      ><i class="bx bx-link" style="color: #d686fc"></i>
-                    </a>
-                    <a
-                      href="https://github.com/komal2203/4-calculator-version-2"
-                      class="aClass"
-                      ><span id="tag">GitHub Code</span
-                      ><i class="bx bx-link" style="color: #eb7bf5;"></i
-                    ></a>
-                  </div>
+                <div class="project-links">
+                  <a href="https://musicobyme.netlify.app/" class="aClass">
+                    <span id="tag">Live Project</span><i class="bx bx-link" style="color: #d686fc"></i>
+                  </a>
+                  <a href="https://github.com/komal2203/Musico" class="aClass"><span id="tag">GitHub Code</span><i
+                      class="bx bx-link" style="color: #eb7bf5"></i></a>
                 </div>
 
               </div>
-            </div>
 
-            <div class="row">
-              <img src="counter.png" alt="" style="height: 50%;" />
-              <div class="layer" style="height: 50%;">
-                <div class="project-box">
-                  <div>
-  
-                    <h5>Counter</h5>
-                    <p>
-                      Developed a dynamic counter app in React with five core features: increment, decrement, custom input for addition/subtraction, and a privacy toggle.
-                    </p>
-                  </div>
-  
-                  <div class="project-links">
-                    <a
-                      href="https://komal2203.github.io/counter-react-redux-toolkit/"
-                      class="aClass"
-                    >
-                      <span id="tag">Live Project</span
-                      ><i class="bx bx-link" style="color: #d686fc"></i>
-                    </a>
-                    <a
-                      href="https://github.com/komal2203/counter-react-redux-toolkit"
-                      class="aClass"
-                      ><span id="tag">GitHub Code</span
-                      ><i class="bx bx-link" style="color: #eb7bf5;"></i
-                    ></a>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-            <div class="row">
-              <img src="todolist.png" style="height: 50%;" alt="" />
-              <div class="layer" style="height: 50%;">
-                <div class="project-box">
-                  <div>
-                    <h5>To-Do-List</h5>
-                    <p>
-                      Built a feature-rich to-do list application using JavaScript
-                      and React with 3 features like task creation, editing, and
-                      status tracking functionalities.
-                    </p>
-                  </div>
-                  <div class="project-links">
-                    <a
-                      href="https://komal2203.github.io/3-todo-app-version-three/"
-                      class="aClass"
-                      ><span id="tag">Live Project</span
-                      ><i class="bx bx-link" style="color: #d686fc"></i
-                    ></a>
-                    <a
-                      href="https://github.com/komal2203/3-todo-app-version-three"
-                      class="aClass"
-                      ><span id="tag">GitHub Code</span
-                      ><i class="bx bx-link" style="color: #eb7bf5;"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="row">
-              <img src="weatherapp.png" style="height: 50%;" alt="" />
-              <div class="layer" style="height: 50%;">
-                <div class="project-box">
-                  <div>
-                    <h5>Weather App</h5>
-                    <p>
-                      Built a weather app that displays real-time temperature, humidity, and wind speed based on user location.
-                    </p>
-                  </div>
-  
-                  <div class="project-links">
-                    <a
-                      href="https://komal2203.github.io/Weather-App/"
-                      class="aClass"
-                      ><span id="tag">Live Project</span
-                      ><i class="bx bx-link" style="color: #d686fc"></i
-                    ></a>
-                    <a
-                      href="https://github.com/komal2203/Weather-App"
-                      class="aClass"
-                      ><span id="tag">GitHub Code</span
-                      ><i class="bx bx-link" style="color: #eb7bf5;"></i
-                    ></a>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-
-            <div class="row">
-              <img src="nike.png" alt="" style="height: 50%;"/>
-              <div class="layer" style="height: 50%;"">
-                <div class="project-box">
-                  <div>
-
-                    <h5>Nike Landing Page</h5>
-                    <p>
-                      A sleek Nike landing page built with React, Tailwind CSS, and Framer Motion, featuring smooth animations and a bold, modern design inspired by real e-commerce sites.
-                    </p>
-                  </div>
-  
-                  <div class="project-links">
-  
-                    <a
-                      href="https://komal2203.github.io/my-nike-landing-page/"
-                      class="aClass"
-                    >
-                      <span id="tag">Live Project</span
-                      ><i class="bx bx-link" style="color: #d686fc"></i>
-                    </a>
-                    <a
-                      href="https://github.com/komal2203/my-nike-landing-page"
-                      class="aClass"
-                      ><span id="tag">GitHub Code</span
-                      ><i class="bx bx-link" style="color: #eb7bf5;"></i
-                    ></a>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-
-            <div class="row">
-              <img src="stopwatch.png" style="height: 50%;" alt="" />
-              <div style="height: 50%;" class="layer">
-                <div class="project-box">
-                  <div>
-                    <h5>Stopwatch</h5>
-                    <p>
-                      Created a responsive stopwatch application with 4 main
-                      features such as start, stop, pause, reset, focusing on
-                      intuitive UI and precise timing functionality.
-                    </p>
-                  </div>
-  
-                  <div class="project-links">
-  
-                    <a href="https://komal2203.github.io/Stopwatch/" class="aClass">
-                      <span id="tag">Live Project</span
-                      ><i class="bx bx-link" style="color: #d686fc"></i
-                    ></a>
-                    <a href="https://github.com/komal2203/Stopwatch" class="aClass"
-                      ><span id="tag">GitHub Code</span
-                      ><i class="bx bx-link" style="color: #eb7bf5;"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="row">
-              <img src="tictactoe.png" style="height: 50%;" alt="" />
-              <div class="layer" style="height: 50%;">
-                <div class="project-box">
-                  <div>
-                    <h5>Tic-Tac-Toe</h5>
-                    <p>
-                      Developed an interactive platform with features such as study
-                      material sharing, quizzes, and forums to assist students in
-                      their studies.
-                    </p>
-                  </div>
-  
-                  <div class="project-links">
-  
-                    <a
-                      href="https://komal2203.github.io/Tic-Tac-Toe-/"
-                      class="aClass"
-                    >
-                      <span id="tag">Live Project</span
-                      ><i class="bx bx-link" style="color: #d686fc"></i
-                    ></a>
-                    <a
-                      href="https://github.com/komal2203/Tic-Tac-Toe-"
-                      class="aClass"
-                      ><span id="tag">GitHub Code</span
-                      ><i class="bx bx-link" style="color: #eb7bf5;"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="row">
-              <img style="height: 50%;" src="studybudy.png" alt="" />
-              <div style="height: 50%;" class="layer">
-                <div class="project-box">
-
-                  <div>
-  
-                    <h5>StuddyBuddy</h5>
-                    <p>
-                      Developed an interactive platform with features such as study
-                      material sharing, quizzes, and forums to assist students in
-                      their studies.
-                    </p>
-                  </div>
-  
-                  <div class="project-links">
-                    <a
-                      href="https://komal2203.github.io/StudyBuddy_project/"
-                      class="aClass"
-                    >
-                      <span id="tag">Live Project</span
-                      ><i class="bx bx-link" style="color: #d686fc"></i>
-                    </a>
-                    <a
-                      href="https://github.com/komal2203/StudyBuddy_project"
-                      class="aClass"
-                      ><span id="tag">GitHub Code</span
-                      ><i class="bx bx-link" style="color: #eb7bf5;"></i
-                    ></a>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-
-            <div class="row">
-              <img style="height: 50%;" src="travel.png" alt="" />
-              <div style="height: 50%;" class="layer">
-                <div class="project-box">
-
-                  <div>
-  
-                    <h5>Endless Escapades</h5>
-                    <p>
-                      Designed a travel blog featuring interactive elements such as
-                      photo galleries, travel guides, and user comments.
-                    </p>
-                  </div>
-                  <div class="project-links">
-  
-                    <a
-                      href="https://komal2203.github.io/Endless_Escapades/"
-                      class="aClass"
-                    >
-                      <span id="tag">Live Project</span
-                      ><i class="bx bx-link" style="color: #d686fc"></i
-                    ></a>
-                    <a
-                      href="https://github.com/komal2203/Endless_Escapades"
-                      class="aClass"
-                      ><span id="tag">GitHub Code</span
-                      ><i class="bx bx-link" style="color: #eb7bf5;"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="row">
-              <img style="height: 50%;" src="amazon.png" alt="" />
-              <div style="height: 50%;" class="layer">
-                <div class="project-box">
-
-                  <div>
-  
-                    <h5>Amazon Clone</h5>
-                    <p>
-                      Replicated the front-end design of the Amazon website,
-                      showcasing skills in layout design, navigation optimization.
-                    </p>
-                  </div>
-  
-                  <div class="project-links">
-  
-                    <a
-                      href="https://komal2203.github.io/Amazon_clone/"
-                      class="aClass"
-                    >
-                      <span id="tag">Live Project</span
-                      ><i class="bx bx-link" style="color: #d686fc"></i
-                    ></a>
-                    <a
-                      href="https://github.com/komal2203/Amazon_clone"
-                      class="aClass"
-                      ><span id="tag">GitHub Code</span
-                      ><i class="bx bx-link" style="color: #eb7bf5;"></i
-                    ></a>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-
-            <div class="row">
-              <img style="height: 50%;" src="apnacafe.png" alt="" />
-              <div style="height: 50%;" class="layer">
-                <div class="project-box">
-
-                  <div>
-  
-                    <h5>Apna Cafe</h5>
-                    <p>
-                      Designed a visually appealing and responsive menu for a
-                      fictional cafe, focusing on user-friendly layout and aesthetic
-                      presentation.
-                    </p>
-                  </div>
-                  <div class="project-links">
-  
-                    <a href="https://komal2203.github.io/Apna_Cafe/" class="aClass">
-                      <span id="tag">Live Project</span
-                      ><i class="bx bx-link" style="color: #d686fc"></i
-                    ></a>
-                    <a href="https://github.com/komal2203/Apna_Cafe" class="aClass"
-                      ><span id="tag">GitHub Code</span
-                      ><i class="bx bx-link" style="color: #eb7bf5;"></i
-                    ></a>
-                  </div>
-                </div>
-
-              </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
 
+          <div class="row hide-mobile">
+            <img src="calculatorr.png" alt="" style="height: 50%;" />
+            <div class="layer" style="height: 50%;">
+              <div class="project-box">
+                <div>
 
-    <!--awards-->
-    <section id="awards" style="margin-top:4rem ;">
-      <div class="project">
-        <div class="main-text">
-          <h2>My<span class="gradient"> Awards</span></h2>
-           <div class="card-container swiper" data-aos="fade-up">
-      <div class="wrapper">
-        <div class="card-list swiper-wrapper">
+                  <h5>Calculator</h5>
+                  <p>
+                    Developed a responsive calculator application using React with
+                    real-time input handling and dynamic display updates with 4
+                    basic arithmetic operations.
+                  </p>
+                </div>
 
-          <!--mckinsey certificate-->
-          <div class="card swiper-slide">
-            <div class="card-image">
-              <img src="mckinsey.jpg" alt="">
+                <div class="project-links">
+
+                  <a href="https://komal2203.github.io/4-calculator-version-2/" class="aClass">
+                    <span id="tag">Live Project</span><i class="bx bx-link" style="color: #d686fc"></i>
+                  </a>
+                  <a href="https://github.com/komal2203/4-calculator-version-2" class="aClass"><span id="tag">GitHub
+                      Code</span><i class="bx bx-link" style="color: #eb7bf5;"></i></a>
+                </div>
+              </div>
+
             </div>
-            <div class="card-content">
-              <h3 class="card-title">
-                Mckinesy & Co. TechQuest 2025
-              </h3>
-              <p class="card-text">
-                National Winner, McKinsey TechQuest 2025 — Built a GenAI-driven spend‑categorization pipeline using semantic matching with human‑in‑the‑loop validation.
-              </p>
-              <div class="card-footer">
-          
-              <a href="https://drive.google.com/file/d/1_8En88NnduYm7v47IrlqWdxBGLftJqpf/view" class="card-button">View Certificate</a>
+          </div>
+
+          <div class="row hide-mobile">
+            <img src="counter.png" alt="" style="height: 50%;" />
+            <div class="layer" style="height: 50%;">
+              <div class="project-box">
+                <div>
+
+                  <h5>Counter</h5>
+                  <p>
+                    Developed a dynamic counter app in React with five core features: increment, decrement, custom input
+                    for addition/subtraction, and a privacy toggle.
+                  </p>
+                </div>
+
+                <div class="project-links">
+                  <a href="https://komal2203.github.io/counter-react-redux-toolkit/" class="aClass">
+                    <span id="tag">Live Project</span><i class="bx bx-link" style="color: #d686fc"></i>
+                  </a>
+                  <a href="https://github.com/komal2203/counter-react-redux-toolkit" class="aClass"><span
+                      id="tag">GitHub Code</span><i class="bx bx-link" style="color: #eb7bf5;"></i></a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="row hide-mobile">
+            <img src="todolist.png" style="height: 50%;" alt="" />
+            <div class="layer" style="height: 50%;">
+              <div class="project-box">
+                <div>
+                  <h5>To-Do-List</h5>
+                  <p>
+                    Built a feature-rich to-do list application using JavaScript
+                    and React with 3 features like task creation, editing, and
+                    status tracking functionalities.
+                  </p>
+                </div>
+                <div class="project-links">
+                  <a href="https://komal2203.github.io/3-todo-app-version-three/" class="aClass"><span id="tag">Live
+                      Project</span><i class="bx bx-link" style="color: #d686fc"></i></a>
+                  <a href="https://github.com/komal2203/3-todo-app-version-three" class="aClass"><span id="tag">GitHub
+                      Code</span><i class="bx bx-link" style="color: #eb7bf5;"></i></a>
+                </div>
               </div>
             </div>
           </div>
 
-          <!--morgan stanley-->
-          <div class="card swiper-slide">
-            <div class="card-image">
-              <img src="morgan.png" alt="">
-            </div>
-            <div class="card-content">
-              <h3 class="card-title">
-                Morgan Stanley Code To Give Hackathon
-              </h3>
-              <p class="card-text">
-                Top 4 Finalist, Morgan Stanley Code-to-Give Hackathon– Built impactful tech solution with a team of six. 
-              </p>
-              <div class="card-footer">
-          
-              <a href="https://drive.google.com/file/d/1lyIsgrZCB6j8dx-qSl3aPKde3pkt8TR2/view" class="card-button">View Certificate</a>
+          <div class="row hide-mobile">
+            <img src="weatherapp.png" style="height: 50%;" alt="" />
+            <div class="layer" style="height: 50%;">
+              <div class="project-box">
+                <div>
+                  <h5>Weather App</h5>
+                  <p>
+                    Built a weather app that displays real-time temperature, humidity, and wind speed based on user
+                    location.
+                  </p>
+                </div>
+
+                <div class="project-links">
+                  <a href="https://komal2203.github.io/Weather-App/" class="aClass"><span id="tag">Live Project</span><i
+                      class="bx bx-link" style="color: #d686fc"></i></a>
+                  <a href="https://github.com/komal2203/Weather-App" class="aClass"><span id="tag">GitHub Code</span><i
+                      class="bx bx-link" style="color: #eb7bf5;"></i></a>
+                </div>
               </div>
+
             </div>
           </div>
 
-          <div class="card swiper-slide">
-            <div class="card-image">
-              <img src="debate.png" alt="">
-            </div>
-            <div class="card-content">
-              <h3 class="card-title">
-                IIT Bombay Debate
-              </h3>
-              <p>
-                Evaluated 5+ debates as an Adjudicator at 16th British Parliamentary Debate, IIT Bombay (Oct 2023).
-              </p>
-              <div class="card-footer">
-            
-            <a href="https://drive.google.com/file/d/1ICFhOImPuPKnGI-fpjKtSVbag9Y_QLpZ/view" class="card-button">View Certificate</a>
-              </div>
-            </div>
-          </div>
+          <div class="row hide-mobile">
+            <img src="nike.png" alt="" style="height: 50%;" />
+            <div class="layer" style="height: 50%;"">
+                <div class=" project-box">
+              <div>
 
-          <div class="card swiper-slide">
-            <div class="card-image">
-              <img src="class10.jpg" alt="">
-              
-            </div>
-            <div class="card-content">
-              <h3 class="card-title">
-                Proficiency Certificate
-              </h3>
-              <p>
-                Secured 2nd Rank in Class 10 across the entire school.Highest score in Social Sciences(98) and Science(98).
-              </p>
-              <div class="card-footer">
-            
-            <a href="https://drive.google.com/file/d/1UfCHa0GcoS9GtIDZfsfwrqlqvC0wGAs7/view?usp=sharing" class="card-button">View Certificate</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="card swiper-slide">
-            <div class="card-image">
-              <img src="olympiad.jpg" alt="">
-            
-            </div>
-            <div class="card-content">
-              <h3 class="card-title">
-                Science Olympiad (Class 9)
-              </h3>
-              <p>
-                Secured Rank 1 among all participants from my school in the Science Olympiad.
-              </p>
-              <div class="card-footer">
-           
-            <a href="https://drive.google.com/file/d/13gmHS-GtZWbDauc6VEdYzBHRcOOuWGDI/view?usp=sharing" class="card-button">View Certificate</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-         <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
-
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-     <!--certificates-->
-     <section id="certifications" style="margin-top:4rem ;">
-      <div class="project">
-        <div class="main-text">
-          <h2 id="awards">My<span class="gradient"> Certifications</span></h2>
-           <div class="card-container swiper" data-aos="fade-up">
-      <div class="wrapper">
-        <div class="card-list swiper-wrapper">
-
-          <!--simplilearn figma-->
-          <div class="card swiper-slide">
-            <div class="card-image">
-              <img src="simplilearnfigma.png" alt="">
-            </div>
-            <div class="card-content">
-              <h3 class="card-platform">Simplilearn</h3>
-              <h3 class="card-title">
-                Introduction to Figma
-              </h3>
-              <p class="card-text">
-                Completed a beginner-level course on Figma, covering UI design, prototyping, and collaborative workflows.
-              </p>
-              <div class="card-footer">
-          
-              <a href="https://drive.google.com/file/d/1_kbLMMeA5lq4vcJKtaaZFH6vI36eoKD0/view?usp=sharing" class="card-button">View Certificate</a>
-              </div>
-            </div>
-          </div>
-
-          <!--udemy foundations of web development-->
-          <div class="card swiper-slide">
-            <div class="card-image">
-              <img src="udemy_css_certificate.jpg" alt="">
-              
-            </div>
-            <div class="card-content">
-              <h3 class="card-platform">Udemy</h3>
-              <h3 class="card-title">
-                Foundations of Web Development
-              </h3>
-              <p>
-                Learned the basics of web development using CSS, React, Bootstrap, and JavaScript to build responsive and interactive user interfaces.
-              </p>
-              <div class="card-footer">
-            
-            <a href="https://drive.google.com/file/d/1Eb9YFsRk3Y1i3gShjQGxyL-HSeskxlkA/view?usp=sharing" class="card-button">View Certificate</a>
-              </div>
-            </div>
-          </div>
-
-             <!--postman api fundamentals-->
-             <div class="card swiper-slide">
-              <div class="card-image">
-                <img src="postman_api_fundamentals_certificate.jpg" alt="">
-              </div>
-              <div class="card-content">
-                <h3 class="card-platform">Postman</h3>
-                <h3 class="card-title">
-                  Postman API Fundamentals
-                </h3>
-                <p class="card-text">
-                  Learned API testing, requests, responses, and automation using Postman, with a focus on RESTful API workflows.
+                <h5>Nike Landing Page</h5>
+                <p>
+                  A sleek Nike landing page built with React, Tailwind CSS, and Framer Motion, featuring smooth
+                  animations and a bold, modern design inspired by real e-commerce sites.
                 </p>
-                <div class="card-footer">
-            
-                <a href=" https://drive.google.com/file/d/1Uv7XhJDWTGqNmmqX-skueoJmVODvwE4Z/view?usp=sharing" class="card-button">View Certificate</a>
+              </div>
+
+              <div class="project-links">
+
+                <a href="https://komal2203.github.io/my-nike-landing-page/" class="aClass">
+                  <span id="tag">Live Project</span><i class="bx bx-link" style="color: #d686fc"></i>
+                </a>
+                <a href="https://github.com/komal2203/my-nike-landing-page" class="aClass"><span id="tag">GitHub
+                    Code</span><i class="bx bx-link" style="color: #eb7bf5;"></i></a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="row hide-mobile">
+          <img src="stopwatch.png" style="height: 50%;" alt="" />
+          <div style="height: 50%;" class="layer">
+            <div class="project-box">
+              <div>
+                <h5>Stopwatch</h5>
+                <p>
+                  Created a responsive stopwatch application with 4 main
+                  features such as start, stop, pause, reset, focusing on
+                  intuitive UI and precise timing functionality.
+                </p>
+              </div>
+
+              <div class="project-links">
+
+                <a href="https://komal2203.github.io/Stopwatch/" class="aClass">
+                  <span id="tag">Live Project</span><i class="bx bx-link" style="color: #d686fc"></i></a>
+                <a href="https://github.com/komal2203/Stopwatch" class="aClass"><span id="tag">GitHub Code</span><i
+                    class="bx bx-link" style="color: #eb7bf5;"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row hide-mobile">
+          <img src="tictactoe.png" style="height: 50%;" alt="" />
+          <div class="layer" style="height: 50%;">
+            <div class="project-box">
+              <div>
+                <h5>Tic-Tac-Toe</h5>
+                <p>
+                  Developed an interactive platform with features such as study
+                  material sharing, quizzes, and forums to assist students in
+                  their studies.
+                </p>
+              </div>
+
+              <div class="project-links">
+
+                <a href="https://komal2203.github.io/Tic-Tac-Toe-/" class="aClass">
+                  <span id="tag">Live Project</span><i class="bx bx-link" style="color: #d686fc"></i></a>
+                <a href="https://github.com/komal2203/Tic-Tac-Toe-" class="aClass"><span id="tag">GitHub Code</span><i
+                    class="bx bx-link" style="color: #eb7bf5;"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row hide-mobile">
+          <img style="height: 50%;" src="studybudy.png" alt="" />
+          <div style="height: 50%;" class="layer">
+            <div class="project-box">
+
+              <div>
+
+                <h5>StuddyBuddy</h5>
+                <p>
+                  Developed an interactive platform with features such as study
+                  material sharing, quizzes, and forums to assist students in
+                  their studies.
+                </p>
+              </div>
+
+              <div class="project-links">
+                <a href="https://komal2203.github.io/StudyBuddy_project/" class="aClass">
+                  <span id="tag">Live Project</span><i class="bx bx-link" style="color: #d686fc"></i>
+                </a>
+                <a href="https://github.com/komal2203/StudyBuddy_project" class="aClass"><span id="tag">GitHub
+                    Code</span><i class="bx bx-link" style="color: #eb7bf5;"></i></a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="row hide-mobile">
+          <img style="height: 50%;" src="travel.png" alt="" />
+          <div style="height: 50%;" class="layer">
+            <div class="project-box">
+
+              <div>
+
+                <h5>Endless Escapades</h5>
+                <p>
+                  Designed a travel blog featuring interactive elements such as
+                  photo galleries, travel guides, and user comments.
+                </p>
+              </div>
+              <div class="project-links">
+
+                <a href="https://komal2203.github.io/Endless_Escapades/" class="aClass">
+                  <span id="tag">Live Project</span><i class="bx bx-link" style="color: #d686fc"></i></a>
+                <a href="https://github.com/komal2203/Endless_Escapades" class="aClass"><span id="tag">GitHub
+                    Code</span><i class="bx bx-link" style="color: #eb7bf5;"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row hide-mobile">
+          <img style="height: 50%;" src="amazon.png" alt="" />
+          <div style="height: 50%;" class="layer">
+            <div class="project-box">
+
+              <div>
+
+                <h5>Amazon Clone</h5>
+                <p>
+                  Replicated the front-end design of the Amazon website,
+                  showcasing skills in layout design, navigation optimization.
+                </p>
+              </div>
+
+              <div class="project-links">
+
+                <a href="https://komal2203.github.io/Amazon_clone/" class="aClass">
+                  <span id="tag">Live Project</span><i class="bx bx-link" style="color: #d686fc"></i></a>
+                <a href="https://github.com/komal2203/Amazon_clone" class="aClass"><span id="tag">GitHub Code</span><i
+                    class="bx bx-link" style="color: #eb7bf5;"></i></a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="row hide-mobile">
+          <img style="height: 50%;" src="apnacafe.png" alt="" />
+          <div style="height: 50%;" class="layer">
+            <div class="project-box">
+
+              <div>
+
+                <h5>Apna Cafe</h5>
+                <p>
+                  Designed a visually appealing and responsive menu for a
+                  fictional cafe, focusing on user-friendly layout and aesthetic
+                  presentation.
+                </p>
+              </div>
+              <div class="project-links">
+
+                <a href="https://komal2203.github.io/Apna_Cafe/" class="aClass">
+                  <span id="tag">Live Project</span><i class="bx bx-link" style="color: #d686fc"></i></a>
+                <a href="https://github.com/komal2203/Apna_Cafe" class="aClass"><span id="tag">GitHub Code</span><i
+                    class="bx bx-link" style="color: #eb7bf5;"></i></a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- View More button - will only show on mobile -->
+        <a href="https://github.com/komal2203" class="btn-box" target="_blank">
+          <span>View More</span>
+          <!-- <i class="bx bxl-github"></i> -->
+        </a>
+      </div>
+    </div>
+    </div>
+  </section>
+
+
+  <!--awards-->
+  <section id="awards" style="margin-top:4rem ;">
+    <div class="project">
+      <div class="main-text">
+        <h2>My<span class="gradient"> Awards</span></h2>
+        <div class="card-container swiper" data-aos="fade-up">
+          <div class="wrapper">
+            <div class="card-list swiper-wrapper">
+
+              <!--mckinsey certificate-->
+              <div class="card swiper-slide">
+                <div class="card-image">
+                  <img src="mckinsey.jpg" alt="">
+                </div>
+                <div class="card-content">
+                  <h3 class="card-title">
+                    Mckinesy & Co. TechQuest 2025
+                  </h3>
+                  <p class="card-text">
+                    National Winner, McKinsey TechQuest 2025 — Built a GenAI-driven spend‑categorization pipeline using
+                    semantic matching with human‑in‑the‑loop validation.
+                  </p>
+                  <div class="card-footer">
+
+                    <a href="https://drive.google.com/file/d/1_8En88NnduYm7v47IrlqWdxBGLftJqpf/view"
+                      class="card-button">View Certificate</a>
+                  </div>
+                </div>
+              </div>
+
+              <!--morgan stanley-->
+              <div class="card swiper-slide">
+                <div class="card-image">
+                  <img src="morgan.png" alt="">
+                </div>
+                <div class="card-content">
+                  <h3 class="card-title">
+                    Morgan Stanley Code To Give Hackathon
+                  </h3>
+                  <p class="card-text">
+                    Top 4 Finalist, Morgan Stanley Code-to-Give Hackathon– Built impactful tech solution with a team of
+                    six.
+                  </p>
+                  <div class="card-footer">
+
+                    <a href="https://drive.google.com/file/d/1lyIsgrZCB6j8dx-qSl3aPKde3pkt8TR2/view"
+                      class="card-button">View Certificate</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card swiper-slide">
+                <div class="card-image">
+                  <img src="debate.png" alt="">
+                </div>
+                <div class="card-content">
+                  <h3 class="card-title">
+                    IIT Bombay Debate
+                  </h3>
+                  <p>
+                    Evaluated 5+ debates as an Adjudicator at 16th British Parliamentary Debate, IIT Bombay (Oct 2023).
+                  </p>
+                  <div class="card-footer">
+
+                    <a href="https://drive.google.com/file/d/1ICFhOImPuPKnGI-fpjKtSVbag9Y_QLpZ/view"
+                      class="card-button">View Certificate</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card swiper-slide">
+                <div class="card-image">
+                  <img src="class10.jpg" alt="">
+
+                </div>
+                <div class="card-content">
+                  <h3 class="card-title">
+                    Proficiency Certificate
+                  </h3>
+                  <p>
+                    Secured 2nd Rank in Class 10 across the entire school.Highest score in Social Sciences(98) and
+                    Science(98).
+                  </p>
+                  <div class="card-footer">
+
+                    <a href="https://drive.google.com/file/d/1UfCHa0GcoS9GtIDZfsfwrqlqvC0wGAs7/view?usp=sharing"
+                      class="card-button">View Certificate</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card swiper-slide">
+                <div class="card-image">
+                  <img src="olympiad.jpg" alt="">
+
+                </div>
+                <div class="card-content">
+                  <h3 class="card-title">
+                    Science Olympiad (Class 9)
+                  </h3>
+                  <p>
+                    Secured Rank 1 among all participants from my school in the Science Olympiad.
+                  </p>
+                  <div class="card-footer">
+
+                    <a href="https://drive.google.com/file/d/13gmHS-GtZWbDauc6VEdYzBHRcOOuWGDI/view?usp=sharing"
+                      class="card-button">View Certificate</a>
+                  </div>
                 </div>
               </div>
             </div>
 
-          <!--udemy dbms-->
-          <div class="card swiper-slide">
-            <div class="card-image">
-              <img src="udemy_dbms_certificate.jpg" alt="">
-              
-            </div>
-            <div class="card-content">
-              <h3 class="card-platform">Udemy</h3>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
 
-              <h3 class="card-title">
-                Relational Databases and SQL
-              </h3>
-              <p>
-                Gained practical experience with relational databases and SQL, including data modeling, queries, joins, and real-world database design.
-              </p>
-              <div class="card-footer">
-            
-            <a href="https://drive.google.com/file/d/1gX8gZxf7GP0TDMH4vk9WTC-uF-qyyQXv/view?usp=sharing" class="card-button">View Certificate</a>
-              </div>
-            </div>
-          </div>
-
-          
-          <!--udemy adobe user experience-->
-          <div class="card swiper-slide">
-            <div class="card-image">
-              <img src="udemy_adobe_ui_certificate.jpg" alt="">
-            </div>
-            <div class="card-content">
-              <h3 class="card-platform">Udemy</h3>
-              <h3 class="card-title">
-                Adobe User Experience Design
-              </h3>
-              <p class="card-text">
-                Learned core UI/UX principles and prototyping using Adobe XD, focusing on user-centered design and interactive interfaces.
-              </p>
-              <div class="card-footer">
-          
-              <a href="https://drive.google.com/file/d/1J-qdNDTPbKDBgil9c0KC-r2_Cogyevyv/view?usp=sharing" class="card-button">View Certificate</a>
-              </div>
-            </div>
-          </div>
-
-         
-
-          <!--udemy figma-->
-          <div class="card swiper-slide">
-            <div class="card-image">
-              <img src="udemy_figma_certificate.jpg" alt="">
-            
-            </div>
-            <div class="card-content">
-              <h3 class="card-platform">Udemy</h3>
-
-              <h3 class="card-title">
-                Mobile App Design in Figma
-              </h3>
-              <p>
-                Designed mobile app interfaces in Figma, from wireframes to interactive prototypes, focusing on user experience.
-              </p>
-              <div class="card-footer">
-           
-            <a href="https://drive.google.com/file/d/1HzVJXHv5nYDtsmzfDCQwq0aXXjIdXZdn/view?usp=sharing" class="card-button">View Certificate</a>
-              </div>
-            </div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
           </div>
         </div>
 
-         <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
-
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-            </div>
-          </div>
-
-        </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- <section style="margin-top:5rem ;">
+  <!--certificates-->
+  <section id="certifications" style="margin-top:4rem ;">
+    <div class="project">
+      <div class="main-text">
+        <h2 id="awards">My<span class="gradient"> Certifications</span></h2>
+        <div class="card-container swiper" data-aos="fade-up">
+          <div class="wrapper">
+            <div class="card-list swiper-wrapper">
+
+              <!--simplilearn figma-->
+              <div class="card swiper-slide">
+                <div class="card-image">
+                  <img src="simplilearnfigma.png" alt="">
+                </div>
+                <div class="card-content">
+                  <h3 class="card-platform">Simplilearn</h3>
+                  <h3 class="card-title">
+                    Introduction to Figma
+                  </h3>
+                  <p class="card-text">
+                    Completed a beginner-level course on Figma, covering UI design, prototyping, and collaborative
+                    workflows.
+                  </p>
+                  <div class="card-footer">
+
+                    <a href="https://drive.google.com/file/d/1_kbLMMeA5lq4vcJKtaaZFH6vI36eoKD0/view?usp=sharing"
+                      class="card-button">View Certificate</a>
+                  </div>
+                </div>
+              </div>
+
+              <!--udemy foundations of web development-->
+              <div class="card swiper-slide">
+                <div class="card-image">
+                  <img src="udemy_css_certificate.jpg" alt="">
+
+                </div>
+                <div class="card-content">
+                  <h3 class="card-platform">Udemy</h3>
+                  <h3 class="card-title">
+                    Foundations of Web Development
+                  </h3>
+                  <p>
+                    Learned the basics of web development using CSS, React, Bootstrap, and JavaScript to build
+                    responsive and interactive user interfaces.
+                  </p>
+                  <div class="card-footer">
+
+                    <a href="https://drive.google.com/file/d/1Eb9YFsRk3Y1i3gShjQGxyL-HSeskxlkA/view?usp=sharing"
+                      class="card-button">View Certificate</a>
+                  </div>
+                </div>
+              </div>
+
+              <!--postman api fundamentals-->
+              <div class="card swiper-slide">
+                <div class="card-image">
+                  <img src="postman_api_fundamentals_certificate.jpg" alt="">
+                </div>
+                <div class="card-content">
+                  <h3 class="card-platform">Postman</h3>
+                  <h3 class="card-title">
+                    Postman API Fundamentals
+                  </h3>
+                  <p class="card-text">
+                    Learned API testing, requests, responses, and automation using Postman, with a focus on RESTful API
+                    workflows.
+                  </p>
+                  <div class="card-footer">
+
+                    <a href=" https://drive.google.com/file/d/1Uv7XhJDWTGqNmmqX-skueoJmVODvwE4Z/view?usp=sharing"
+                      class="card-button">View Certificate</a>
+                  </div>
+                </div>
+              </div>
+
+              <!--udemy dbms-->
+              <div class="card swiper-slide">
+                <div class="card-image">
+                  <img src="udemy_dbms_certificate.jpg" alt="">
+
+                </div>
+                <div class="card-content">
+                  <h3 class="card-platform">Udemy</h3>
+
+                  <h3 class="card-title">
+                    Relational Databases and SQL
+                  </h3>
+                  <p>
+                    Gained practical experience with relational databases and SQL, including data modeling, queries,
+                    joins, and real-world database design.
+                  </p>
+                  <div class="card-footer">
+
+                    <a href="https://drive.google.com/file/d/1gX8gZxf7GP0TDMH4vk9WTC-uF-qyyQXv/view?usp=sharing"
+                      class="card-button">View Certificate</a>
+                  </div>
+                </div>
+              </div>
+
+
+              <!--udemy adobe user experience-->
+              <div class="card swiper-slide">
+                <div class="card-image">
+                  <img src="udemy_adobe_ui_certificate.jpg" alt="">
+                </div>
+                <div class="card-content">
+                  <h3 class="card-platform">Udemy</h3>
+                  <h3 class="card-title">
+                    Adobe User Experience Design
+                  </h3>
+                  <p class="card-text">
+                    Learned core UI/UX principles and prototyping using Adobe XD, focusing on user-centered design and
+                    interactive interfaces.
+                  </p>
+                  <div class="card-footer">
+
+                    <a href="https://drive.google.com/file/d/1J-qdNDTPbKDBgil9c0KC-r2_Cogyevyv/view?usp=sharing"
+                      class="card-button">View Certificate</a>
+                  </div>
+                </div>
+              </div>
+
+
+
+              <!--udemy figma-->
+              <div class="card swiper-slide">
+                <div class="card-image">
+                  <img src="udemy_figma_certificate.jpg" alt="">
+
+                </div>
+                <div class="card-content">
+                  <h3 class="card-platform">Udemy</h3>
+
+                  <h3 class="card-title">
+                    Mobile App Design in Figma
+                  </h3>
+                  <p>
+                    Designed mobile app interfaces in Figma, from wireframes to interactive prototypes, focusing on user
+                    experience.
+                  </p>
+                  <div class="card-footer">
+
+                    <a href="https://drive.google.com/file/d/1HzVJXHv5nYDtsmzfDCQwq0aXXjIdXZdn/view?usp=sharing"
+                      class="card-button">View Certificate</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- <section style="margin-top:5rem ;">
       <div class="project">
         <div class="main-text">
           <h2 id="Certifications">My<span class="gradient"> Certifications</span></h2>
@@ -1382,185 +1295,170 @@
     </section>
   -->
 
-    <section id="contact" class="contact" style="margin-top:5rem ;">
-      <div class="contact-text" data-aos="fade-right">
-        <h2>Contact <span class="gradient">Me</span></h2>
-        <h4>Let's work Together</h4>
-        <p>
-          Excited about the possibilities of collaborating on a project? I am
-          too! Whether you have a design challenge or a creative idea that needs
-          bringing to life, I’d love to hear from you.
-          <br />
-          Let’s connect and explore how we can turn your vision into reality.
-          Feel free to drop me a message, and let’s create something amazing
-          together! 🚀
-        </p>
-        <div class="contact-list">
-          <ul>
-            <li>
-              <a
-                href="https://www.linkedin.com/in/komalmeena2203/"
-                class="socials"
-                style="--i: 1"
-                ><i class="bx bxl-linkedin" id="contact-logo"></i>LinkedIn</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://www.instagram.com/komal__2203/"
-                class="socials"
-                style="--i: 2"
-                ><i class="bx bxl-instagram" id="contact-logo"></i>Instagram</a
-              >
-            </li>
-<!--             <li>
+  <section id="contact" class="contact" style="margin-top:5rem ;">
+    <div class="contact-text" data-aos="fade-right">
+      <h2>Contact <span class="gradient">Me</span></h2>
+      <h4>Let's work Together</h4>
+      <p>
+        Excited about the possibilities of collaborating on a project? I am
+        too! Whether you have a design challenge or a creative idea that needs
+        bringing to life, I'd love to hear from you.
+        <br />
+        Let's connect and explore how we can turn your vision into reality.
+        Feel free to drop me a message, and let's create something amazing
+        together! 🚀
+      </p>
+      <div class="contact-list">
+        <ul>
+          <li>
+            <a href="https://www.linkedin.com/in/komalmeena2203/" class="socials" style="--i: 1"><i
+                class="bx bxl-linkedin" id="contact-logo"></i>LinkedIn</a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/komal__2203/" class="socials" style="--i: 2"><i class="bx bxl-instagram"
+                id="contact-logo"></i>Instagram</a>
+          </li>
+          <!--             <li>
               <a href="#" class="socials" style="--i: 3"
                 ><i class="bx bx-phone" id="contact-logo"></i>+91 9920027800</a
               >
             </li> -->
-            <li>
-              <a href="#" class="socials" style="--i: 4"
-                ><i class="bx bxl-gmail" id="contact-logo"></i
-                >komalmeena2203@gmail.com</a
-              >
-            </li>
-          </ul>
-        </div>
+          <li>
+            <a href="#" class="socials" style="--i: 4"><i class="bx bxl-gmail"
+                id="contact-logo"></i>komalmeena2203@gmail.com</a>
+          </li>
+        </ul>
       </div>
+    </div>
 
-      <div class="vid-container-contact">
-          <video muted autoplay loop play-inline src="contactvideo2.mp4" type="video/mp4"></video>
-      </div>
+    <div class="vid-container-contact">
+      <video muted autoplay loop play-inline src="contactvideo2.mp4" type="video/mp4"></video>
+    </div>
 
-      <div id="contact" class="contact-form" data-aos="fade-left">
-        <form action="">
-          <input type="text" placeholder="Enter Your Name" required />
-          <input type="email" placeholder="Enter Your Email" required />
+    <div id="contact" class="contact-form" data-aos="fade-left">
+      <form action="">
+        <input type="text" placeholder="Enter Your Name" required />
+        <input type="email" placeholder="Enter Your Email" required />
 
-          <input type="text" placeholder="Enter Your Subject" />
-          <textarea
-            name=""
-            id=""
-            cols="40"
-            rows="10"
-            placeholder="Enter Your Message"
-          ></textarea>
-          <input type="submit" value="Submit" class="send" />
-        </form>
-      </div>
-    </section>
+        <input type="text" placeholder="Enter Your Subject" />
+        <textarea name="" id="" cols="40" rows="10" placeholder="Enter Your Message"></textarea>
+        <input type="submit" value="Submit" class="send" />
+      </form>
+    </div>
+  </section>
 
-    <section class="last-section">
-      <div class="last-text">
-        <p>Developed by Komal Meena &copy 2024</p>
-        <a href="#" class="back-to-top">Back To Top</a>
-      </div>
-    </section>
+  <section class="last-section">
+    <div class="last-text">
+      <p>Developed by Komal Meena &copy 2024</p>
+      <a href="#" class="back-to-top">Back To Top</a>
+    </div>
+  </section>
 
-     <script src="main.js"></script>
-    <!-- AOS JS -->
-      <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-      <script>
-        AOS.init({
-          duration: 1000,  // Animation duration in ms
-          once: true       // Animate only once when scroll into view
-        });
-      </script>
+  <script src="main.js"></script>
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,  // Animation duration in ms
+      once: true       // Animate only once when scroll into view
+    });
+  </script>
 
 
-      <script>
-        const hamburger = document.getElementById('hamburger');
-        const popupMenu = document.getElementById('popupMenu');
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const popupMenu = document.getElementById('popupMenu');
 
-        hamburger.addEventListener('click', () => {
-          hamburger.classList.toggle('active');
-          popupMenu.classList.toggle('show');
-        });
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      popupMenu.classList.toggle('show');
+    });
 
-        // Optional: Close popup when a link is clicked
-        popupMenu.querySelectorAll('a').forEach(link => {
-          link.addEventListener('click', () => {
-            popupMenu.classList.remove('show');
-            hamburger.classList.remove('active');
-          });
-        });
-
-        // Hide popup when clicking outside
-      document.addEventListener('click', (e) => {
-        if (!popupMenu.contains(e.target) && !hamburger.contains(e.target)) {
-          popupMenu.classList.remove('show');
-          hamburger.classList.remove('active');
-        }
+    // Optional: Close popup when a link is clicked
+    popupMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        popupMenu.classList.remove('show');
+        hamburger.classList.remove('active');
       });
-      </script>
+    });
+
+    // Hide popup when clicking outside
+    document.addEventListener('click', (e) => {
+      if (!popupMenu.contains(e.target) && !hamburger.contains(e.target)) {
+        popupMenu.classList.remove('show');
+        hamburger.classList.remove('active');
+      }
+    });
+  </script>
 
 
-            <script>
-            function disableLeftRightAnimationsOnMobile() {
-              if (window.innerWidth <= 768) {
-                // 📱 mobile screen
-                document
-                  .querySelectorAll('[data-aos="fade-left"], [data-aos="fade-right"]')
-                  .forEach(function (el) {
-                    el.removeAttribute('data-aos');  // ❌ disable only fade-left and fade-right
-                  });
-              }
-            }
-
-            document.addEventListener("DOMContentLoaded", function () {
-              disableLeftRightAnimationsOnMobile(); // first remove left/right on mobile
-              AOS.init({
-                once: true,
-              });
-            });
-
-            window.addEventListener("resize", function () {
-              disableLeftRightAnimationsOnMobile();
-              AOS.refreshHard(); // Refresh AOS after changes
-            });
-          </script>
-
-      <script>
-        const counters = document.querySelectorAll('.stat-number');
-        let animated = false;
-
-        function animateCounts() {
-          if (animated) return;
-
-          counters.forEach(counter => {
-            const target = +counter.getAttribute('data-target');
-            const duration = 2000;
-            const start = 0;
-            const startTime = performance.now();
-
-            function update(currentTime) {
-              const elapsed = currentTime - startTime;
-              const progress = Math.min(elapsed / duration, 1);
-              const value = Math.floor(progress * target);
-              counter.textContent = value + (target > 10 ? "+" : "");
-
-              if (progress < 1) {
-                requestAnimationFrame(update);
-              }
-            }
-
-            requestAnimationFrame(update);
+  <script>
+    function disableLeftRightAnimationsOnMobile() {
+      if (window.innerWidth <= 768) {
+        // 📱 mobile screen
+        document
+          .querySelectorAll('[data-aos="fade-left"], [data-aos="fade-right"]')
+          .forEach(function (el) {
+            el.removeAttribute('data-aos');  // ❌ disable only fade-left and fade-right
           });
+      }
+    }
 
-          animated = true;
-        }
+    document.addEventListener("DOMContentLoaded", function () {
+      disableLeftRightAnimationsOnMobile(); // first remove left/right on mobile
+      AOS.init({
+        once: true,
+      });
+    });
 
-        function onScroll() {
-          const section = document.getElementById("highlights");
-          const rect = section.getBoundingClientRect();
-          if (rect.top < window.innerHeight && rect.bottom >= 0) {
-            animateCounts();
-            window.removeEventListener("scroll", onScroll);
+    window.addEventListener("resize", function () {
+      disableLeftRightAnimationsOnMobile();
+      AOS.refreshHard(); // Refresh AOS after changes
+    });
+  </script>
+
+  <script>
+    const counters = document.querySelectorAll('.stat-number');
+    let animated = false;
+
+    function animateCounts() {
+      if (animated) return;
+
+      counters.forEach(counter => {
+        const target = +counter.getAttribute('data-target');
+        const duration = 2000;
+        const start = 0;
+        const startTime = performance.now();
+
+        function update(currentTime) {
+          const elapsed = currentTime - startTime;
+          const progress = Math.min(elapsed / duration, 1);
+          const value = Math.floor(progress * target);
+          counter.textContent = value + (target > 10 ? "+" : "");
+
+          if (progress < 1) {
+            requestAnimationFrame(update);
           }
         }
 
-        window.addEventListener("scroll", onScroll);
-      </script>
+        requestAnimationFrame(update);
+      });
 
-  </body>
+      animated = true;
+    }
+
+    function onScroll() {
+      const section = document.getElementById("highlights");
+      const rect = section.getBoundingClientRect();
+      if (rect.top < window.innerHeight && rect.bottom >= 0) {
+        animateCounts();
+        window.removeEventListener("scroll", onScroll);
+      }
+    }
+
+    window.addEventListener("scroll", onScroll);
+  </script>
+
+</body>
+
 </html>
