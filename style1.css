@@ -517,7 +517,7 @@ body {
   /* grid-template-columns: repeat(2, 1fr); */
   justify-content: space-between;
   align-items: center;
-  gap: 1.5rem;
+  /* gap: 1.5rem; */
   margin-top: 5rem;
 }
 
